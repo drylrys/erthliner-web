@@ -26,7 +26,7 @@ function LandingPageNavigation({ toggleNav, navToggle }) {
     },
     {
       label: "Our People",
-      link: "/our-peaple"
+      link: "/our-people"
     },
     {
       label: "Advocacy",
