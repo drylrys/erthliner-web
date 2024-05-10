@@ -96,13 +96,13 @@ function About() {
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-3">
                 <div
-                  className={` bg-[url("/assets/img/vision.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/vision.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
                 />
-                <h1 className="font-extrabold text-[45px] text-black">
+                <h1 className="font-extrabold text-[35px] text-black">
                   OUR VISON
                 </h1>
               </div>
-              <p className="font-semibold text-[25px] text-black">
+              <p className="font-semibold text-[20px] text-black">
                 ERTH LINER CARGO EXPRESS CO., is a highly professional,
                 dependable and client-friendly customs brokerage services
                 provider that renders the fastest, most competitive and most
@@ -112,13 +112,13 @@ function About() {
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-3">
                 <div
-                  className={` bg-[url("/assets/img/mission.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/mission.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
                 />
-                <h1 className="font-extrabold text-[45px] text-black">
+                <h1 className="font-extrabold text-[35px] text-black">
                   OUR MISSION
                 </h1>
               </div>
-              <p className="font-semibold text-[25px] text-black">
+              <p className="font-semibold text-[20px] text-black">
                 To provide the general clientele with professional, reliable,
                 efficient and A-1 brokerage and freight forwarding services that
                 will facilitate fast release of import and dispatch of export
@@ -130,35 +130,35 @@ function About() {
           <div className="flex flex-col gap-8 pr-20 pl-20  ">
             <div className="flex gap-6">
               <div
-                className={` bg-[url("assets/img/values.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center `}
+                className={` bg-[url("assets/img/values.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
               />
-              <h1 className="text-[45px] font-extrabold">Core Values</h1>
+              <h1 className="text-[35px] font-extrabold">Core Values</h1>
             </div>
             <div>
-              <h1 className="font-extrabold text-[25px] text-black">
+              <h1 className="font-extrabold text-[20px] text-black">
                 PROFESSIONALISM
               </h1>
-              <p className="font-semibold text-[22px] text-black">
+              <p className="font-semibold text-[18px] text-black">
                 infusing high professionalism in handling its clientele and
                 dealing with its stakeholders with an end-in view of
                 establishing long-term partnerships.
               </p>
             </div>
             <div>
-              <h1 className="font-extrabold text-[25px] text-black">
+              <h1 className="font-extrabold text-[20px] text-black">
                 INTEGRITY
               </h1>
-              <p className="font-semibold text-[22px] text-black">
+              <p className="font-semibold text-[18px] text-black">
                 Honesty, reliability and honor... rolled into one - the highest
                 ethical and moral standards that shall crown the over-all
                 corporate well-being of ELEX.
               </p>
             </div>
             <div>
-              <h1 className="font-extrabold text-[25px] text-black">
+              <h1 className="font-extrabold text-[20px] text-black">
                 EXCELLENCE
               </h1>
-              <p className="font-semibold text-[22px] text-black">
+              <p className="font-semibold text-[18px] text-black">
                 ELEX is committed to offer superior performance in all aspects
                 of ELEX operations redounding to the clientele's and
                 stakeholders' over-all satisfaction.
