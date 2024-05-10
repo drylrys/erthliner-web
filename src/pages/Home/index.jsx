@@ -10,7 +10,6 @@ import {
 } from "framer-motion";
 import ChooseUsCard from "../../components/ChooseUsCard";
 import Collapse from "../../components/Collapse";
-// import container3 from "../../assets/img/container5.png";
 
 function Home() {
   const whyChooseUsRef = useRef(null);
@@ -54,7 +53,7 @@ function Home() {
     <div className="mx-10">
       <Navigation />
       <div
-        className={`lg:h-[calc(100vh)]  bg-[url("assets/img/bg5.png")]
+        className={`lg:h-[calc(100vh)]  bg-[url("/assets/img/bg5.png")]
         bg-cover bg-no-repeat bg-center overflow-hidden rounded-3xl `}
       >
         <motion.div
@@ -138,13 +137,10 @@ function Home() {
 
         <div className="flex justify-end  pl-20 pr-20">
           <img src="/assets/img/container5.png" className="w-[600px]" />
-          {/* <div
-            className={`content-img-shadow bg-[url("assets/img/container3.png")] h-[600px] w-[1000px] bg-cover bg-no-repeat bg-center rounded-lg `}
-          /> */}
         </div>
       </div>
       <div
-        className={`flex flex-col mb-[250px] px-[450px] justify-center items-center gap-10 h-[550px] bg-[url("assets/img/pic4.png")]   bg-cover bg-no-repeat bg-top rounded-3xl mx-32`}
+        className={`flex flex-col mb-[250px] px-[450px] justify-center items-center gap-10 h-[550px] bg-[url("/assets/img/pic4.png")]   bg-cover bg-no-repeat bg-top rounded-3xl mx-32`}
       >
         <div className="text-center">
           <h1 className="font-extrabold text-[45px] text-white">
@@ -165,7 +161,7 @@ function Home() {
       <div className="grid grid-cols-2 gap-0 mt-[150px] mb-[250px]  mx-[200px]">
         <div className="300 flex justify-end  pl-20 pr-20">
           <div
-            className={`content-img-shadow bg-[url("assets/img/pic1.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
+            className={`content-img-shadow bg-[url("/assets/img/pic1.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
           />
         </div>
         <div className="flex flex-col gap-8 pr-20 justify-center items-center pl-20  ">

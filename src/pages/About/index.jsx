@@ -33,7 +33,7 @@ function About() {
         <div className="grid grid-cols-2 gap-0 mt-[150px] mb-[150px] ">
           <div className="300 flex justify-end  pl-20 pr-20">
             <div
-              className={`content-img-shadow bg-[url("assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
+              className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
             />
           </div>
           <div className="flex flex-col gap-8 pr-20 justify-center items-center pl-20  ">
@@ -86,7 +86,7 @@ function About() {
           </div>
           <div className="flex justify-end pl-20 pr-20">
             <div
-              className={`content-img-shadow bg-[url("assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
+              className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
             />
           </div>
         </div>
@@ -96,7 +96,7 @@ function About() {
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-3">
                 <div
-                  className={` bg-[url("assets/img/vision.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/vision.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center `}
                 />
                 <h1 className="font-extrabold text-[45px] text-black">
                   OUR VISON
@@ -112,7 +112,7 @@ function About() {
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-3">
                 <div
-                  className={` bg-[url("assets/img/mission.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/mission.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center `}
                 />
                 <h1 className="font-extrabold text-[45px] text-black">
                   OUR MISSION
