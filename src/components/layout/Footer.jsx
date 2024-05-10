@@ -11,7 +11,7 @@ function Footer() {
           <div className="flex flex-col p-4">
             <a href="/">
               <Icon
-                src="/assets/public/logo.png"
+                src="/assets/img/logo.png"
                 alt="logo"
                 className="z-0 w-16 h-16"
               />
