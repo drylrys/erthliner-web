@@ -38,7 +38,7 @@ function LandingPageNavigation({ toggleNav, navToggle }) {
     },
     {
       label: "Contact Us",
-      link: "/conctac-us"
+      link: "/contact"
     }
   ];
 
