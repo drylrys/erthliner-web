@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "../Icon";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import logo from "../../assets/img/logo.png";
+
 function Footer() {
   return (
     <>
@@ -10,7 +10,11 @@ function Footer() {
         <div className="flex justify-center">
           <div className="flex flex-col p-4">
             <a href="/">
-              <Icon src={logo} alt="logo" className="z-0 w-16 h-16" />
+              <Icon
+                src="/assets/public/logo.png"
+                alt="logo"
+                className="z-0 w-16 h-16"
+              />
             </a>
             <h4 className="text-sm">Erth Liner Cargo Express Co.</h4>
             <h4 className="text-sm">

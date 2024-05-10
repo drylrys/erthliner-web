@@ -10,7 +10,7 @@ import {
 } from "framer-motion";
 import ChooseUsCard from "../../components/ChooseUsCard";
 import Collapse from "../../components/Collapse";
-import container3 from "../../assets/img/container5.png";
+// import container3 from "../../assets/img/container5.png";
 
 function Home() {
   const whyChooseUsRef = useRef(null);
@@ -137,7 +137,7 @@ function Home() {
         </div>
 
         <div className="flex justify-end  pl-20 pr-20">
-          <img src={container3} className="w-[600px]" />
+          <img src="/assets/img/container5.png" className="w-[600px]" />
           {/* <div
             className={`content-img-shadow bg-[url("assets/img/container3.png")] h-[600px] w-[1000px] bg-cover bg-no-repeat bg-center rounded-lg `}
           /> */}

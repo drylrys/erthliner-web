@@ -5,6 +5,7 @@ function Employee() {
   return (
     <div>
       <Navigation />
+      test
       <Footer />
     </div>
   );

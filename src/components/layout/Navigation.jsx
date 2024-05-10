@@ -3,7 +3,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Icon from "../Icon";
-import logo from "../../assets/img/logo.png";
+
 function LandingPageNavigation({ toggleNav, navToggle }) {
   const router = useNavigate();
 
@@ -47,7 +47,11 @@ function LandingPageNavigation({ toggleNav, navToggle }) {
       <div className="flex items-center justify-between">
         <div className="flex relative h-full lg:pl-16">
           <a href="/">
-            <Icon src={logo} alt="logo" className="z-0 w-16 h-16" />
+            <Icon
+              src="/assets/img/logo.png"
+              alt="logo"
+              className="z-0 w-16 h-16"
+            />
           </a>
         </div>
         <div className="hidden md:block w-full text-center">
