@@ -6,8 +6,8 @@ import { FaInstagram } from "react-icons/fa6";
 function Footer() {
   return (
     <>
-      <div className="grid grid-cols-4 gap-4 px-20">
-        <div className="flex justify-center">
+      <div className="grid grid-row-4 md:grid-cols-4 gap-4 px-5 mt-20 ">
+        <div className="flex lg:justify-center order-4 lg:order-1">
           <div className="flex flex-col p-4">
             <a href="/">
               <Icon
@@ -22,7 +22,7 @@ function Footer() {
             </h4>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex lg:justify-center order-1 lg:order-2">
           <div className=" flex flex-col p-4 gap-4">
             <div>
               <h1 className="font-extrabold">Working Hours</h1>
@@ -37,7 +37,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex lg:justify-center order-2 lg:order-3">
           <div className=" flex flex-col gap-3 p-4">
             <h1 className="font-extrabold">CONTACT US</h1>
             <div>
@@ -57,7 +57,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center order-3 lg:order-4">
           <div className=" flex flex-col p-4 gap-4">
             <h1 className="font-extrabold">FOLLOW US</h1>
             <div className="flex gap-4">

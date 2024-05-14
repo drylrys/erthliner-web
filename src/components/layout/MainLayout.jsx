@@ -13,12 +13,9 @@ function MainLayout({ children }) {
   return (
     <>
       <Sidebar handleToggleNav={handleToggleNav} navToggle={navToggle} />
-
-      <div className={`h-[calc(100vh)]`}>
-        <Navigation toggleNav={handleToggleNav} navToggle={navToggle} />
-        <div className="">{children}</div>
-        <Footer />
-      </div>
+      <Navigation toggleNav={handleToggleNav} navToggle={navToggle} />
+      {children}
+      <Footer />
     </>
   );
 }

@@ -4,7 +4,6 @@ import Navigation from "../../components/layout/Navigation";
 function Service() {
   return (
     <div className="mx-10">
-      <Navigation />
       <div className="px-[190px]">
         <div className="grid grid-cols-2 gap-0 mt-[150px] mb-[150px] ">
           <div className="300 flex font-extrabold text-[80px]  justify-center items-center  pl-20 pr-20">

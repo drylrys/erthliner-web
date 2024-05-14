@@ -7,14 +7,14 @@ function Collapse({ data = [] }) {
       question: "What is flowbite ?",
       answer:
         " Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more, Check out this guide to learn how to get started and start developing websites even faster with components on top of Tailwind CSS.",
-      isOpen: false
+      isOpen: false,
     },
     {
       question: "is there a Figma file available",
       answer:
         "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file. Check out the Figma design system based on the utility classes from Tailwind CSS and components from Flowbite.",
-      isOpen: false
-    }
+      isOpen: false,
+    },
   ]);
 
   const handleToggle = (index) => {
@@ -38,7 +38,7 @@ function Collapse({ data = [] }) {
         return (
           <button
             key={index}
-            className={`flex w-1/2 flex-col gap-5  border-t-2 ${
+            className={`flex w-full lg:w-1/2 flex-col gap-5  border-t-2 ${
               index + 1 === faqs.length ? "border-b-2" : ""
             } p-5`}
             onClick={() => handleToggle(index)}

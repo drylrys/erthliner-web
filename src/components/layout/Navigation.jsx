@@ -14,43 +14,43 @@ function LandingPageNavigation({ toggleNav, navToggle }) {
   const navPages = [
     {
       label: "Home",
-      link: "/"
+      link: "/",
     },
     {
       label: "About Us",
-      link: "/about-us"
+      link: "/about-us",
     },
     {
       label: "Services",
-      link: "/services"
+      link: "/services",
     },
     {
       label: "Our People",
-      link: "/our-people"
+      link: "/our-people",
     },
     {
       label: "Advocacy",
-      link: "/advocacy"
+      link: "/advocacy",
     },
     {
       label: "FAQ",
-      link: "/faq"
+      link: "/faq",
     },
     {
       label: "Contact Us",
-      link: "/contact"
-    }
+      link: "/contact",
+    },
   ];
 
   return (
-    <nav className="pr-6 pl-1 py-2 z-40">
+    <nav className="py-2 z-40 mx-6">
       <div className="flex items-center justify-between">
         <div className="flex relative h-full lg:pl-16">
           <a href="/">
             <Icon
               src="/assets/img/logo.png"
               alt="logo"
-              className="z-0 w-16 h-16"
+              className="z-0 w-12 h-12"
             />
           </a>
         </div>
@@ -75,6 +75,7 @@ function LandingPageNavigation({ toggleNav, navToggle }) {
           Call us: +63 987 654 3210
         </h1>
       </div> */}
+
         <div className="md:hidden" onClick={handleToggleNav}>
           {!navToggle && (
             <Icon
@@ -82,7 +83,7 @@ function LandingPageNavigation({ toggleNav, navToggle }) {
               alt="button"
               height={20}
               width={20}
-              className=" cursor-pointer fill-[#F1F1F1] z-10"
+              className=" cursor-pointer fill-[#030303] z-10 w-10 h-10"
             />
           )}
         </div>

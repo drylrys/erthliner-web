@@ -9,19 +9,12 @@ function Sidebar({ handleToggleNav, navToggle }) {
           navToggle ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="md:hidden" onClick={handleToggleNav}>
-          <Icon
-            src="/assets/img/ERTH3.png"
-            alt="logo"
-            height={20}
-            width={200}
-          />
+        <div className="md:hidden p-5" onClick={handleToggleNav}>
+          <Icon src="/assets/svg/logo.svg" className="w-10 h-w-10" alt="logo" />
           <Icon
             src="/assets/svg/hamburger-close.svg"
             alt="button"
-            height={20}
-            width={20}
-            className=" cursor-pointer fill-white absolute top-5 right-5"
+            className=" cursor-pointer fill-white absolute top-5 right-5 w-6 h-w-6"
           />
         </div>
 
