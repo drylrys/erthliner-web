@@ -6,7 +6,7 @@ import {
   useAnimate,
   useInView,
   useScroll,
-  useTransform
+  useTransform,
 } from "framer-motion";
 import ChooseUsCard from "../../components/ChooseUsCard";
 import Collapse from "../../components/Collapse";
@@ -17,7 +17,7 @@ function Home() {
 
   const { scrollYProgress } = useScroll({
     target: whyChooseUsRef,
-    offset: ["start end", "end start"]
+    offset: ["start end", "end start"],
   });
 
   console.log(scrollYProgress);
@@ -29,7 +29,7 @@ function Home() {
       borderColor: "border-[#59886B]",
       transition: { type: "spring", duration: 1, delay: 0 },
       content:
-        "With years of industry expertise, our team navigates the complexities of customs regulations with precision. We stay abreast of the latest changes, allowing us to offer informed solutions tailored to your business."
+        "With years of industry expertise, our team navigates the complexities of customs regulations with precision. We stay abreast of the latest changes, allowing us to offer informed solutions tailored to your business.",
     },
     {
       title: "Client-Centric Approach",
@@ -37,7 +37,7 @@ function Home() {
       borderColor: "border-[#e4f801]",
       transition: { type: "spring", duration: 1, delay: 0.5 },
       content:
-        "Your satisfaction is our priority. We take a client-centric approach, working closely with you to understand your unique requirements and providing personalized customs brokerage services that meet and exceed your expectations."
+        "Your satisfaction is our priority. We take a client-centric approach, working closely with you to understand your unique requirements and providing personalized customs brokerage services that meet and exceed your expectations.",
     },
     {
       title: "Cost Optimization",
@@ -45,8 +45,8 @@ function Home() {
       borderColor: "border-[#e90100]",
       transition: { type: "spring", duration: 1, delay: 1 },
       content:
-        "We understand the financial implications of customs delays. Erthliner Cargo Express is committed to optimizing costs by minimizing delays and avoiding unnecessary fines through meticulous compliance management."
-    }
+        "We understand the financial implications of customs delays. Erthliner Cargo Express is committed to optimizing costs by minimizing delays and avoiding unnecessary fines through meticulous compliance management.",
+    },
   ];
 
   return (
@@ -75,7 +75,7 @@ function Home() {
           </div>
         </motion.div>
       </div>
-      <motion.div className="mx-5 sm:mx-20 my-28 md:mx-[150px] lg:mx-[20px] screen:mx-[350px] 2xl:mx-[250px] mt-[150px]">
+      <motion.div>
         <div className="w-full flex flex-col items-center gap-10">
           <div className="flex flex-col items-center lg:px-64 gap-5">
             <h1 className="text-5xl text-center font-extrabold text-[#59886B]">
@@ -96,7 +96,7 @@ function Home() {
                   animate={
                     isInView
                       ? {
-                          x: [-2000, 0]
+                          x: [-2000, 0],
                         }
                       : {}
                   }
@@ -115,7 +115,7 @@ function Home() {
           </div>
         </div>
       </motion.div>
-      <div className="grid grid-cols-2 gap-0 my-[250px]   mx-[200px]">
+      <div className="grid grid-cols-2 gap-0 my-[250px]">
         <div className="flex flex-col gap-8 pr-20 justify-center items-center pl-20  ">
           <div className="flex flex-col gap-6">
             <h1 className="text-[40px] font-extrabold">

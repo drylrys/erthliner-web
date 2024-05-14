@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 function Footer() {
   return (
     <>
-      <div class="grid grid-cols-4 gap-4 px-20">
+      <div className="grid grid-cols-4 gap-4 px-20">
         <div className="flex justify-center">
           <div className="flex flex-col p-4">
             <a href="/">
