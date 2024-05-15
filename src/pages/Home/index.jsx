@@ -52,7 +52,7 @@ function Home() {
     <MainLayout>
       <div className="mx-4">
         <div
-          className={`lg:h-[calc(100vh)] p-5 md:p-24 py-20 md:py-40 bg-[url("/assets/img/bg5.png")] bg-cover bg-no-repeat bg-top rounded-3xl `}
+          className={`lg:h-[calc(100vh)] p-2 md:p-24 py-20 md:py-40 bg-[url("/assets/img/bg7.png")] bg-cover bg-no-repeat bg-top rounded-3xl `}
         >
           <motion.div
             initial={{ opacity: 0, scale: 2 }}
@@ -169,7 +169,7 @@ function Home() {
         <div className="grid lg:grid-cols-2 gap-16 md:gap-20 my-40 md:px-20">
           <div className="flex justify-center xl:justify-start ">
             <div
-              className={`content-img-shadow bg-[url("/assets/img/pic1.jpg")] w-[400px] h-[400px]  md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
+              className={`content-img-shadow bg-[url("/assets/img/pic1.jpg")] w-[300px] h-[300px]  md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
             />
           </div>
           <div className="flex flex-col gap-8 lg:pr-20 justify-center items-center  ">

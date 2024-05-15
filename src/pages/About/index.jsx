@@ -6,33 +6,11 @@ import MainLayout from "../../components/layout/MainLayout";
 function About() {
   return (
     <MainLayout>
-      {/* <div className="grid grid-row-2 md:grid-cols-2 gap-0 my-16 mx-5  md:my-[150px] ">
-        <div className="flex font-extrabold text-[80px] text-center justify-center items-center lg:justify-end  lg:px-5 xl:px-20 ">
-          <h1>ABOUT US</h1>
-        </div>
-        <div className="flex flex-col gap-8  lg:px-5 xl:px-20 justify-center items-center">
-          <div>
-            <p className="text-[20px]">
-              <span className="text-[30px] font-bold">
-                Erth Liner Cargo Express Co.
-              </span>
-              is an import/export trade solution specialist in the Philippines,
-              both for air and sea shipments, that provides expert customs
-              documentation and all transactions with customs concerning the
-              entry and admissibility of merchandise by reason of importation
-              and exportation. With our expertise and professional services,
-              rest assured that your company will not experience delays and
-              penalties, thus saving your valuable time and precious resources.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
       <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4 my-16 ">
-        <div className="flex flex-col gap-8  justify-center items-center lg:px-5 xl:px-20">
+        <div className="flex flex-col gap-8  justify-center  items-center lg:px-5 xl:px-20">
           <h1 className="font-extrabold  text-[80px] ">ABOUT US</h1>
         </div>
-        <div className="flex flex-col gap-8 lg:px-5 xl:px-20 justify-center items-center  ">
+        <div className="flex flex-col gap-8 lg:px-20 xl:px-20 justify-center items-center  ">
           <div>
             <h1 className="text-[30px] font-extrabold mb-4 text-center">
               Erth Liner Cargo Express Co.
@@ -50,8 +28,8 @@ function About() {
         </div>
       </div>
 
-      <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4">
-        <div className="flex flex-col gap-8  justify-center items-center lg:px-5 xl:px-20">
+      <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4 my-16">
+        <div className="flex justify-center  lg:justify-start lg:px-5 xl:px-20">
           <div
             className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
           />
@@ -79,8 +57,8 @@ function About() {
         </div>
       </div>
 
-      <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4">
-        <div className="flex flex-col gap-8  justify-center items-center lg:px-5 xl:px-20">
+      <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4 my-16">
+        <div className="flex flex-col gap-8  justify-center items-center lg:px-5 xl:px-20 order-2 md:order-1">
           <h1 className="text-[30px] font-extrabold mb-4">What we do</h1>
           <ul className="flex flex-col gap-10 text-[20px]">
             <li className=" border-black border-l-4 pl-6">
@@ -102,21 +80,21 @@ function About() {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center  xl:justify-end lg:px-5 xl:px-20">
+        <div className="flex justify-center  xl:justify-end lg:px-5 xl:px-20 order-1 md:order-2">
           <div
             className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
           />
         </div>
       </div>
 
-      <div className="grid grid-row-2 lg:grid-cols-2 gap-8 md:gap-0 mt-[150px] mb-[150px] ">
+      <div className="grid grid-row-3 lg:grid-cols-2 md:gap-8 mt-[150px] mb-[150px] ">
         <div className=" flex justify-end gap-5 flex-col px-5 lg:px-20">
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
               <div
                 className={` bg-[url("/assets/img/vision.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
               />
-              <h1 className="font-extrabold text-[35px] text-black">
+              <h1 className="font-extrabold text-[30px] text-black">
                 OUR VISON
               </h1>
             </div>
@@ -132,7 +110,7 @@ function About() {
               <div
                 className={` bg-[url("/assets/img/mission.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
               />
-              <h1 className="font-extrabold text-[35px] text-black">
+              <h1 className="font-extrabold text-[30px] text-black">
                 OUR MISSION
               </h1>
             </div>
@@ -150,7 +128,7 @@ function About() {
             <div
               className={` bg-[url("assets/img/values.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
             />
-            <h1 className="text-[35px] font-extrabold">Core Values</h1>
+            <h1 className="text-[30px] font-extrabold">Core Values</h1>
           </div>
           <div>
             <h1 className="font-extrabold text-[20px] text-black">
@@ -178,6 +156,25 @@ function About() {
               ELEX is committed to offer superior performance in all aspects of
               ELEX operations redounding to the clientele's and stakeholders'
               over-all satisfaction.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-6 items-center justify-center lg:col-span-2 lg:pt-14 px-5 ">
+          <div className="lg:w-1/2 ">
+            <div className="flex items-center gap-3">
+              <div
+                className={` bg-[url("/assets/img/business.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+              />
+              <h1 className="font-extrabold text-[30px] text-black">
+                Business Goals & Objectives
+              </h1>
+            </div>
+            <p className="font-semibold text-[20px] text-black">
+              Our main goal is to provide excellent service at all times. We
+              prioritize making sure that both our clients and stakeholders are
+              happy with what we do. This means consistently delivering
+              top-quality results and ensuring that everyone involved feels
+              satisfied with the outcome of our efforts.
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ function MainLayout({ children }) {
   };
   return (
     <>
-      <div className="max-w-[1280px] mr-auto ml-auto">
+      <div className="max-w-[1900px] mr-auto ml-auto">
         <Sidebar handleToggleNav={handleToggleNav} navToggle={navToggle} />
         <Navigation toggleNav={handleToggleNav} navToggle={navToggle} />
         {children}
