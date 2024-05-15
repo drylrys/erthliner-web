@@ -87,7 +87,7 @@ function About() {
         </div>
       </div>
 
-      <div className="grid grid-row-3 lg:grid-cols-2 md:gap-8 mt-[150px] mb-[150px] ">
+      <div className="grid grid-row-3 gap-8 lg:grid-cols-2 md:gap-8 mt-[150px] mb-[150px] ">
         <div className=" flex justify-end gap-5 flex-col px-5 lg:px-20">
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
@@ -128,7 +128,7 @@ function About() {
             <div
               className={` bg-[url("assets/img/values.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
             />
-            <h1 className="text-[30px] font-extrabold">Core Values</h1>
+            <h1 className="text-[30px] font-extrabold">CORE VALUES</h1>
           </div>
           <div>
             <h1 className="font-extrabold text-[20px] text-black">
@@ -161,12 +161,13 @@ function About() {
         </div>
         <div className="flex flex-col gap-6 items-center justify-center lg:col-span-2 lg:pt-14 px-5 ">
           <div className="lg:w-1/2 ">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-5 ">
               <div
-                className={` bg-[url("/assets/img/business.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+                className={`bg-[url("/assets/img/business.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center p-8  `}
               />
+
               <h1 className="font-extrabold text-[30px] text-black">
-                Business Goals & Objectives
+                BUSINESS GOALS & OBJECTIVES
               </h1>
             </div>
             <p className="font-semibold text-[20px] text-black">

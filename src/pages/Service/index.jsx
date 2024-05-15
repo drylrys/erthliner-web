@@ -7,14 +7,14 @@ function Service() {
     <MainLayout>
       <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4 my-16 ">
         <div className="flex flex-col gap-8  justify-center  items-center lg:px-5 xl:px-20">
-          <h1 className="font-extrabold  text-[80px] ">SERVICES</h1>
+          <h1 className="font-extrabold  text-[80px]">SERVICES</h1>
         </div>
         <div className="flex flex-col gap-8 lg:px-20 xl:px-20 justify-center items-center  ">
           <div>
             <p className="text-[20px]">
-              At{" "}
+              At
               <span className="text-[30px] font-bold">
-                Erth Liner Cargo Express Co.{" "}
+                Erth Liner Cargo Express Co.
               </span>
               , we firmly believe that QUALITY SERVICE is not just a goal but
               the very foundation upon which all our efforts are built. We
