@@ -117,7 +117,7 @@ function Service() {
           {services.map((service, index) => {
             return (
               <div
-                className="flex flex-col gap-4 p-5 shadow-xl w-[350px] lg:w-[500px]"
+                className="flex flex-col gap-4 p-5 shadow-xl w-[350px] xl:w-[400px]"
                 key={index}
               >
                 <div className="flex justify-center">
