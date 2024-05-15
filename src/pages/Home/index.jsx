@@ -52,7 +52,7 @@ function Home() {
     <MainLayout>
       <div className="mx-4">
         <div
-          className={`lg:h-[calc(100vh)] p-24 py-20 md:py-40 bg-[url("/assets/img/bg5.png")] bg-cover bg-no-repeat bg-top rounded-3xl `}
+          className={`lg:h-[calc(100vh)] p-5 md:p-24 py-20 md:py-40 bg-[url("/assets/img/bg5.png")] bg-cover bg-no-repeat bg-top rounded-3xl `}
         >
           <motion.div
             initial={{ opacity: 0, scale: 2 }}
@@ -60,7 +60,7 @@ function Home() {
             transition={{ duration: 1 }}
             className="h-full flex justify-center flex-col lg:w-1/2 gap-9"
           >
-            <h1 className="text-stroke font-extrabold text-8xl text-[#F1F1F1] ">
+            <h1 className="text-stroke font-extrabold text-6xl text-[#F1F1F1] ">
               Simplify Your Customs Brokerage Process with Us
             </h1>
             <h2 className="text-stroke font-normal text-[#F1F1F1] text-xl md:text-xl   ">

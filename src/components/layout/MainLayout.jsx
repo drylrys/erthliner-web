@@ -12,10 +12,12 @@ function MainLayout({ children }) {
   };
   return (
     <>
-      <Sidebar handleToggleNav={handleToggleNav} navToggle={navToggle} />
-      <Navigation toggleNav={handleToggleNav} navToggle={navToggle} />
-      {children}
-      <Footer />
+      <div className="max-w-[1280px] mr-auto ml-auto">
+        <Sidebar handleToggleNav={handleToggleNav} navToggle={navToggle} />
+        <Navigation toggleNav={handleToggleNav} navToggle={navToggle} />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 }
