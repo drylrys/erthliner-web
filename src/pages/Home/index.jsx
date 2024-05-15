@@ -80,7 +80,7 @@ function Home() {
           </motion.div>
         </div>
 
-        <motion.div>
+        <motion.div ref={whyChooseUsRef}>
           <div className="w-full flex flex-col items-center gap-10 my-40 md:px-20 ">
             <div className="flex flex-col items-center lg:px-64 gap-5">
               <h1 className="text-5xl text-center font-extrabold text-[#59886B]">
@@ -97,7 +97,7 @@ function Home() {
               {contents.map((content, index) => {
                 return (
                   <ChooseUsCard
-                    whyChooseUsRef={whyChooseUsRef}
+                    // whyChooseUsRef={whyChooseUsRef}
                     animate={
                       isInView
                         ? {
