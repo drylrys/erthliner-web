@@ -126,7 +126,7 @@ function About() {
         <div className="flex flex-col gap-8 px-5 lg:px-20">
           <div className="flex gap-6">
             <div
-              className={` bg-[url("assets/img/values.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+              className={` bg-[url("/assets/img/values.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
             />
             <h1 className="text-[30px] font-extrabold">CORE VALUES</h1>
           </div>
