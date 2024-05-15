@@ -8,7 +8,7 @@ function Footer() {
     <>
       <div className="grid grid-row-4 md:grid-cols-4 gap-4 px-5 mt-20 ">
         <div className="flex lg:justify-center order-4 lg:order-1">
-          <div className="flex flex-col p-4">
+          <div className="flex flex-col p-4 justify-center items-center">
             <a href="/">
               <Icon
                 src="/assets/img/logo.png"
@@ -27,6 +27,9 @@ function Footer() {
             <div>
               <h1 className="font-extrabold">Working Hours</h1>
               <h4 className="text-sm">Mon - Fri: 8am - 5pm</h4>
+              <h4 className="text-sm">
+                With 24/7 Customer Care specialist available{" "}
+              </h4>
             </div>
             <div>
               <h1 className="font-extrabold">BUSINESS ADDRESS</h1>
@@ -41,11 +44,9 @@ function Footer() {
           <div className=" flex flex-col gap-3 p-4">
             <h1 className="font-extrabold">CONTACT US</h1>
             <div>
-              <h4 className="text-sm">Phone Nos:</h4>
-              <h4 className="text-sm">+63 987 654 3210 (Globe)</h4>
-              <h4 className="text-sm">+63 987 654 3210 (Smart)</h4>
               <h4 className="text-sm">Tel. Nos:</h4>
-              <h4 className="text-sm">+632 987 6543</h4>
+              <h4 className="text-sm">(+632) 8244-24-37</h4>
+              <h4 className="text-sm">(+632) 8986-89-23</h4>
             </div>
             <div>
               <h1 className="font-extrabold">

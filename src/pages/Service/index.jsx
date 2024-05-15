@@ -93,7 +93,7 @@ function Service() {
           {products.map((product, index) => {
             return (
               <div
-                className="flex flex-col gap-4 p-5 shadow-xl w-[350px] lg:w-[380px]"
+                className="flex flex-col gap-4 p-5 shadow-xl w-[350px]  xl:w-[340px]"
                 key={index}
               >
                 <div className="flex justify-center">
@@ -134,27 +134,6 @@ function Service() {
           })}
         </div>
       </div>
-
-      {/* <div className=" px-5 gap-4 my-16 flex flex-col items-center lg:px-20">
-        <div className="text-[60px] font-extrabold">Services</div>
-        <div className="grid  md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 gap-4 lg:grid-rows-2">
-          {services.map((services, index) => {
-            return (
-              <div className="flex flex-col gap-4 p-5 shadow-xl" key={index}>
-                <div className="flex justify-center">
-                  <div
-                    className={` ${services?.icon} h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
-                  />
-                </div>
-                <h1 className="text-center text-[30px] font-extrabold">
-                  {services?.title}
-                </h1>
-                <p>{services?.description}</p>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
     </MainLayout>
   );
 }
