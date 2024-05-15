@@ -6,7 +6,7 @@ import {
   useAnimate,
   useInView,
   useScroll,
-  useTransform,
+  useTransform
 } from "framer-motion";
 import ChooseUsCard from "../../components/ChooseUsCard";
 import Collapse from "../../components/Collapse";
@@ -18,7 +18,7 @@ function Home() {
 
   const { scrollYProgress } = useScroll({
     target: whyChooseUsRef,
-    offset: ["start end", "end start"],
+    offset: ["start end", "end start"]
   });
 
   const contents = [
@@ -28,7 +28,7 @@ function Home() {
       borderColor: "border-[#59886B]",
       transition: { type: "spring", duration: 1, delay: 0 },
       content:
-        "With years of industry expertise, our team navigates the complexities of customs regulations with precision. We stay abreast of the latest changes, allowing us to offer informed solutions tailored to your business.",
+        "With years of industry expertise, our team navigates the complexities of customs regulations with precision. We stay abreast of the latest changes, allowing us to offer informed solutions tailored to your business."
     },
     {
       title: "Client-Centric Approach",
@@ -36,7 +36,7 @@ function Home() {
       borderColor: "border-[#e4f801]",
       transition: { type: "spring", duration: 1, delay: 0.5 },
       content:
-        "Your satisfaction is our priority. We take a client-centric approach, working closely with you to understand your unique requirements and providing personalized customs brokerage services that meet and exceed your expectations.",
+        "Your satisfaction is our priority. We take a client-centric approach, working closely with you to understand your unique requirements and providing personalized customs brokerage services that meet and exceed your expectations."
     },
     {
       title: "Cost Optimization",
@@ -44,16 +44,15 @@ function Home() {
       borderColor: "border-[#e90100]",
       transition: { type: "spring", duration: 1, delay: 1 },
       content:
-        "We understand the financial implications of customs delays. Erthliner Cargo Express is committed to optimizing costs by minimizing delays and avoiding unnecessary fines through meticulous compliance management.",
-    },
+        "We understand the financial implications of customs delays. Erthliner Cargo Express is committed to optimizing costs by minimizing delays and avoiding unnecessary fines through meticulous compliance management."
+    }
   ];
 
   return (
     <MainLayout>
       <div className="mx-4">
         <div
-          className={`lg:h-[calc(100vh)] p-4 py-20 md:py-40 bg-[url("/assets/img/bg5.png")]
-        bg-cover bg-no-repeat bg-top rounded-3xl `}
+          className={`lg:h-[calc(100vh)] p-24 py-20 md:py-40 bg-[url("/assets/img/bg5.png")] bg-cover bg-no-repeat bg-top rounded-3xl `}
         >
           <motion.div
             initial={{ opacity: 0, scale: 2 }}
@@ -61,7 +60,7 @@ function Home() {
             transition={{ duration: 1 }}
             className="h-full flex justify-center flex-col lg:w-1/2 gap-9"
           >
-            <h1 className="text-stroke font-extrabold text-6xl   text-[#F1F1F1] ">
+            <h1 className="text-stroke font-extrabold text-8xl text-[#F1F1F1] ">
               Simplify Your Customs Brokerage Process with Us
             </h1>
             <h2 className="text-stroke font-normal text-[#F1F1F1] text-xl md:text-xl   ">
@@ -102,7 +101,7 @@ function Home() {
                     animate={
                       isInView
                         ? {
-                            x: [-2000, 0],
+                            x: [-2000, 0]
                           }
                         : {}
                     }
@@ -135,13 +134,13 @@ function Home() {
                 experts is committed to providing you with top-notch customs
                 brokerage services tailored to your unique business needs.
               </p>
-              <button className="bg-[#59886B] text-white font-bold w-64 p-4 rounded-lg   ">
+              <button className="bg-[#59886B] text-white font-bold w-64 p-4 rounded-lg">
                 Know more about us &gt; &gt;
               </button>
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end   lg:pl-20 lg:pr-20 lg:order-2 order-1">
+          <div className="flex justify-center lg:justify-end  lg:pl-20 lg:pr-20 lg:order-2 order-1">
             <img
               src="/assets/img/container5.png"
               className=" w-[300px] h-[300px]  md:h-[400px] md:w-[400px]"
@@ -167,13 +166,13 @@ function Home() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 md:gap-20 my-40  md:px-20">
-          <div className="flex justify-center lg:justify-end  lg:pl-20 lg:pr-20">
+        <div className="grid lg:grid-cols-2 gap-16 md:gap-20 my-40 md:px-20">
+          <div className="flex justify-center xl:justify-start ">
             <div
-              className={`content-img-shadow bg-[url("/assets/img/pic1.jpg")] w-[300px] h-[300px]  md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
+              className={`content-img-shadow bg-[url("/assets/img/pic1.jpg")] w-[400px] h-[400px]  md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
             />
           </div>
-          <div className="flex flex-col  gap-8 lg:pr-20 justify-center items-center  ">
+          <div className="flex flex-col gap-8 lg:pr-20 justify-center items-center  ">
             <div>
               <h1 className="text-[40px] font-extrabold">Our services</h1>
               <p className="text-[20px]">

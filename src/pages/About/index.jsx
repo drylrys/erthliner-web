@@ -6,7 +6,7 @@ import MainLayout from "../../components/layout/MainLayout";
 function About() {
   return (
     <MainLayout>
-      <div className="grid grid-row-2 md:grid-cols-2 gap-0 my-16 mx-5  md:my-[150px] ">
+      {/* <div className="grid grid-row-2 md:grid-cols-2 gap-0 my-16 mx-5  md:my-[150px] ">
         <div className="flex font-extrabold text-[80px] text-center justify-center items-center lg:justify-end  lg:px-5 xl:px-20 ">
           <h1>ABOUT US</h1>
         </div>
@@ -14,8 +14,30 @@ function About() {
           <div>
             <p className="text-[20px]">
               <span className="text-[30px] font-bold">
-                Erth Liner Cargo Express Co.{" "}
+                Erth Liner Cargo Express Co.
               </span>
+              is an import/export trade solution specialist in the Philippines,
+              both for air and sea shipments, that provides expert customs
+              documentation and all transactions with customs concerning the
+              entry and admissibility of merchandise by reason of importation
+              and exportation. With our expertise and professional services,
+              rest assured that your company will not experience delays and
+              penalties, thus saving your valuable time and precious resources.
+            </p>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4 my-16 ">
+        <div className="flex flex-col gap-8  justify-center items-center lg:px-5 xl:px-20">
+          <h1 className="font-extrabold  text-[80px] ">ABOUT US</h1>
+        </div>
+        <div className="flex flex-col gap-8 lg:px-5 xl:px-20 justify-center items-center  ">
+          <div>
+            <h1 className="text-[30px] font-extrabold mb-4 text-center">
+              Erth Liner Cargo Express Co.
+            </h1>
+            <p className="text-[20px]">
               is an import/export trade solution specialist in the Philippines,
               both for air and sea shipments, that provides expert customs
               documentation and all transactions with customs concerning the
@@ -28,8 +50,8 @@ function About() {
         </div>
       </div>
 
-      <div className="grid grid-row-2 md:grid-cols-2 gap-8 my-16 mx-5  md:my-[150px] ">
-        <div className=" flex   justify-center lg:justify-end  xl:px-20">
+      <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4">
+        <div className="flex flex-col gap-8  justify-center items-center lg:px-5 xl:px-20">
           <div
             className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
           />
