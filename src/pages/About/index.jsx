@@ -8,7 +8,7 @@ function About() {
     <MainLayout>
       <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4 my-16 ">
         <div className="flex flex-col gap-8  justify-center  items-center lg:px-5 xl:px-20">
-          <h1 className="font-extrabold  text-[80px] ">ABOUT US</h1>
+          <h1 className="font-extrabold text-center text-[80px] ">ABOUT US</h1>
         </div>
         <div className="flex flex-col gap-8 lg:px-20 xl:px-20 justify-center items-center  ">
           <div>
@@ -31,7 +31,7 @@ function About() {
       <div className="grid grid-row-2 md:grid-cols-2 px-5 gap-4 my-16">
         <div className="flex justify-center  lg:justify-start lg:px-5 xl:px-20">
           <div
-            className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
+            className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[300px] w-[300px] md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
           />
         </div>
         <div className="flex flex-col gap-8 lg:px-5 xl:px-20 justify-center items-center  ">
@@ -82,7 +82,7 @@ function About() {
         </div>
         <div className="flex justify-center  xl:justify-end lg:px-5 xl:px-20 order-1 md:order-2">
           <div
-            className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[600px] w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
+            className={`content-img-shadow bg-[url("/assets/img/bg.jpg")] h-[300px] w-[300px] md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center rounded-lg shadow-2xl`}
           />
         </div>
       </div>
