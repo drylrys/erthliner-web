@@ -51,7 +51,7 @@ function Home() {
 
   return (
     <MainLayout>
-      <div className="px- md:px-20">
+      <div className="px-2 md:px-20">
         <div className="flex flex-col justify-center items-center gap-10 mt-20">
           <h1 className="font-extrabold text-6xl md:text-7xl text-center">
             Simplify Your{" "}
@@ -103,11 +103,11 @@ function Home() {
           </div>
         </div> */}
         <div className="my-32">
-          <h1 className="text-[#BD3531] text-xl text-start  font-bold pl-24">
+          <h1 className="text-[#BD3531] text-xl text-start  font-bold  md:pl-24">
             We are
           </h1>
           <div className="flex justify-center flex-wrap md:flex-row gap-9 2xl:gap-52">
-            <h1 className="font-extrabold text-6xl">Why Choose Us</h1>
+            <h1 className="font-extrabold  text-6xl">Why Choose Us</h1>
             <p className="text-[#88888a] text-2xl lg:text-end lg:w-1/2">
               At Erth liner cargo express co., We pride ourselves on being a
               trusted partner in your global trade journey. Our customs
