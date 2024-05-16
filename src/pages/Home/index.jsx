@@ -51,9 +51,9 @@ function Home() {
 
   return (
     <MainLayout>
-      <div className="px-5 md:px-20">
+      <div className="px- md:px-20">
         <div className="flex flex-col justify-center items-center gap-10 mt-20">
-          <h1 className="font-extrabold text-7xl text-center">
+          <h1 className="font-extrabold text-6xl md:text-7xl text-center">
             Simplify Your{" "}
             <span className="text-[#BD3531]">
               Customs <br /> Brokerage
