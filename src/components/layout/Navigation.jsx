@@ -14,36 +14,36 @@ function LandingPageNavigation({ toggleNav, navToggle }) {
   const navPages = [
     {
       label: "Home",
-      link: "/",
+      link: "/"
     },
     {
       label: "About Us",
-      link: "/about-us",
+      link: "/about-us"
     },
     {
       label: "Services",
-      link: "/services",
+      link: "/services"
     },
     {
       label: "Our People",
-      link: "/our-people",
+      link: "/our-people"
     },
     {
       label: "Advocacy",
-      link: "/advocacy",
+      link: "/advocacy"
     },
     {
       label: "FAQ",
-      link: "/faq",
+      link: "/faq"
     },
     {
       label: "Contact Us",
-      link: "/contact",
-    },
+      link: "/contact"
+    }
   ];
 
   return (
-    <nav className="py-2 z-40 mx-6">
+    <nav className="py-8 z-40 mx-6">
       <div className="flex items-center justify-between">
         <div className="flex relative h-full lg:pl-16">
           <a href="/">
@@ -55,12 +55,12 @@ function LandingPageNavigation({ toggleNav, navToggle }) {
           </a>
         </div>
         <div className="hidden md:block w-full text-center">
-          <ul className="flex justify-center md:gap-[10px] lg:gap-[32px]">
+          <ul className="flex justify-center  md:gap-[10px] lg:gap-[32px]">
             {navPages.map((page, index) => {
               return (
                 <li key={index}>
                   <a
-                    className="font-bold text-xl hover:border-b-2 hover:border-black pb-2"
+                    className="font-bold text-lg hover:border-b-2 hover:border-[#BD3531] pb-2"
                     href={page.link}
                   >
                     {page.label}

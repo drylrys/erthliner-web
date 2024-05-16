@@ -61,18 +61,18 @@ function About() {
         <div className="flex flex-col gap-8  justify-center items-center lg:px-5 xl:px-20 order-2 md:order-1">
           <h1 className="text-[30px] font-extrabold mb-4">What we do</h1>
           <ul className="flex flex-col gap-10 text-[20px]">
-            <li className=" border-black border-l-4 pl-6">
+            <li className=" border-[#59886B] border-l-4 pl-6">
               We at ERTH Liner Cargo Express Co., facilitate worry-free
               transactions to our clients, and provide easy access to importers
               and exporters in and out of the country.
             </li>
-            <li className=" border-black border-l-4 pl-6">
+            <li className=" border-[#59886B] border-l-4 pl-6">
               We offers cost-effective and efficient solutions from tariff
               computations based on the most economical and efficient commodity
               classification with timely deliveries and conveyance of goods to
               their respective destinations.
             </li>
-            <li className=" border-black border-l-4 pl-6">
+            <li className=" border-[#59886B] border-l-4 pl-6">
               Our first class services provide uninterrupted access to our most
               progressive clientele world-wide, as well as ensure security and
               personalized handling of goods for the satisfaction of our valued
