@@ -75,33 +75,7 @@ function Home() {
             className={`bg-[url("/assets/img/bg.jpg")] w-full h-[700px] bg-cover bg-no-repeat bg-bottom`}
           />
         </div>
-        {/* <div className=" flex flex-col gap-4 p-6">
-          <h1 className="text-center font-bold text-xl sm:text-2xl md:text-3xl text-[#88888a]">
-            Accreditations & Affiliations
-          </h1>
-          <div className=" flex gap-6 md:gap-10 justify-center">
-            <img
-              src="/assets/img/customs_logo1.png"
-              alt="logo"
-              className="filter grayscale aspect-[3/2] object-contain  sm:w-16 md:w-36"
-            />
-            <img
-              src="/assets/img/dti_logo1.png"
-              className="filter grayscale aspect-[3/2] object-contain sm:w-16 md:w-36"
-              alt="logo"
-            />
-            <img
-              src="/assets/img/peza_logo1.png"
-              className="filter grayscale aspect-[3/2] object-contain sm:w-16 md:w-36"
-              alt="logo"
-            />
-            <img
-              src="/assets/img/ppa_logo1.png"
-              className="filter grayscale aspect-[3/2] object-contain  sm:w-16 md:w-36"
-              alt="logo"
-            />
-          </div>
-        </div> */}
+
         <div className="my-32">
           <h1 className="text-[#BD3531] text-xl text-start  font-bold  md:pl-24">
             We are
@@ -190,7 +164,7 @@ function Home() {
             </div>
             <div className="lg:flex lg:justify-center hidden">
               <div
-                className={`bg-[url("/assets/img/ship3.png")] w-10/12 h-[700px] bg-cover bg-no-repeat bg-bottom`}
+                className={`bg-[url("/assets/img/ship3.png")] w-full h-full bg-cover bg-no-repeat bg-top`}
               />
             </div>
             <div className="flex flex-col  gap-8">
