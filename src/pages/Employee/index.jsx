@@ -34,7 +34,7 @@ function Employee() {
       <div className="px-5 md:px-20">
         <div className="flex flex-col justify-center items-center  py-20">
           <h1 className="text-[#BD3531] text-xl  font-bold  ">The Team</h1>
-          <h1 className="text-4xl lg:text-5xl text-center lg:text-start font-extrabold mb-4">
+          <h1 className="text-4xl lg:text-5xl text-center font-extrabold mb-4">
             Meet our team of experts at <br /> Earthliner Cargo Express
           </h1>
           <p className="text-[20px] lg:text-center lg:w-8/12 text-[#88888a] ">
@@ -86,7 +86,7 @@ function Employee() {
           </div>
         </div>
       </div>
-      {/* <div
+      <div
         className={`bg-[url("/assets/img/redbg.jpg")] bg-cover bg-no-repeat bg-top gap-10 flex flex-col w-full justify-center items-center p-2 md:h-[500px]`}
       >
         <div className="text-white font-extrabold text-5xl lg:text-6xl text-center md:w-1/2">
@@ -101,7 +101,7 @@ function Employee() {
             Contact us
           </button>
         </div>
-      </div> */}
+      </div>
     </MainLayout>
   );
 }
