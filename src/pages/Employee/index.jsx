@@ -69,12 +69,12 @@ function Employee() {
           </div>
         </div>
         <div className="flex items-center justify-center py-20">
-          <div className="flex  flex-wrap gap-8 justify-center  xl:w-11/12 ">
+          <div className="flex  flex-wrap gap-8 justify-center  xl:w-11/12">
             {employees.map((employee, index) => {
               return (
                 <div
                   key={index}
-                  className={`bg-[url("/assets/img/pic-1.png")] md:h-[300px] md:w-[280px]  h-[400px] w-[380px]  lg:h-[400px] lg:w-[380px] : bg-cover bg-no-repeat bg-top rounded-tl-[80px] rounded-br-[80px] bg-[#FFFFFF]   flex items-end`}
+                  className={`bg-[url("/assets/img/pic-1.png")] md:h-[300px] md:w-[280px]  h-[300px] w-[280px]  lg:h-[400px] lg:w-[380px] : bg-cover bg-no-repeat bg-top rounded-tl-[80px] rounded-br-[80px] bg-[#FFFFFF]   flex items-end`}
                 >
                   <div className="pl-6 text-white font-semibold">
                     <h1>{employee.name}</h1>
