@@ -2,6 +2,36 @@ import React from "react";
 import Icon from "../Icon";
 
 function Sidebar({ handleToggleNav, navToggle }) {
+  const navPages = [
+    {
+      label: "Home",
+      link: "/"
+    },
+    {
+      label: "About Us",
+      link: "/about-us"
+    },
+    {
+      label: "Services",
+      link: "/services"
+    },
+    {
+      label: "Our People",
+      link: "/our-people"
+    },
+    {
+      label: "Advocacy",
+      link: "/advocacy"
+    },
+    {
+      label: "FAQ",
+      link: "/faq"
+    },
+    {
+      label: "Contact Us",
+      link: "/contact"
+    }
+  ];
   return (
     <>
       <div
@@ -18,27 +48,19 @@ function Sidebar({ handleToggleNav, navToggle }) {
           />
         </div>
 
-        <ul className="absolute  md:hidden m-2 flex flex-col top-20  gap-4 p-4">
-          <li>
-            <a className="text-sm text-black" href={"/"}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="text-sm text-black" href={"/about-us"}>
-              About Us
-            </a>
-          </li>
-          <li>
-            <a className="text-sm text-black" href={"/services"}>
-              Services
-            </a>
-          </li>
-          <li>
-            <a className="text-sm text-black" href={"/contact-us"}>
-              Contact Us
-            </a>
-          </li>
+        <ul className="absolute  md:hidden m-2 flex flex-col top-20 w-full  gap-4 p-4">
+          {navPages.map((page, index) => {
+            return (
+              <li className="py-2  border-b-1" key={index}>
+                <a
+                  className="text-xl font-bold text-[#BD3531]"
+                  href={page.link}
+                >
+                  {page.label}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
       {navToggle && (
