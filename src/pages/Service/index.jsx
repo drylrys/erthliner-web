@@ -94,7 +94,7 @@ function Service() {
           <div className="flex flex-col xl:flex-row gap-4">
             <div className="flex justify-center ">
               <div
-                className={` bg-[url("/assets/img/bg.jpg")] w-full h-[350px] xl:w-[700px] xl:h-full  bg-cover bg-no-repeat bg-center `}
+                className={` bg-[url("/assets/img/port2.jpg")] w-full h-[350px] xl:w-[700px] xl:h-full  bg-cover bg-no-repeat bg-center `}
               />
             </div>
             <div className="justify-center grid md:grid-cols-2  gap-6">
@@ -138,7 +138,7 @@ function Service() {
 
             <div className="xl:col-span-3 xl:row-span-2 md:col-span-2 ">
               <div
-                className={` bg-[url("/assets/img/bg.jpg")] h-[400px]  xl:h-full w-full bg-cover bg-no-repeat bg-center `}
+                className={` bg-[url("/assets/img/containercargo.jpg")] h-[400px]  xl:h-full w-full bg-cover bg-no-repeat bg-center `}
               />
             </div>
 

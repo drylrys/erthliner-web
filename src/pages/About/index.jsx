@@ -26,7 +26,7 @@ function About() {
         <div className="py-20 flex flex-col items-center gap-8">
           <div className="bg-white p-4 flex flex-col xl:flex-row gap-4 items-center justify-center ">
             <div
-              className={` bg-[url("/assets/img/bg.jpg")] h-[300px] w-[300px] md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center `}
+              className={` bg-[url("/assets/img/ship2.jpg")] h-[300px] w-[300px] md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center `}
             />
             <div className="lg:flex-1 flex items-center flex-col text-2xl ">
               <div className="flex flex-col justify-center items-center lg:px-20 lg:text-center">
