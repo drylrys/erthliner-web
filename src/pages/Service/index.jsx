@@ -8,66 +8,28 @@ function Service() {
       title: "Customs Brokerage Services",
       description:
         "We handle all the necessary paperwork and logistics involved in customs clearance for importing and exporting goods, ensuring a smooth and efficient process for our clients.",
-      icon: ` bg-[url("/assets/img/expert.png")]`
+      icon: ` bg-[url("/assets/img/docs.png")]`
     },
     {
       title: "International Freight Forwarding (Door to Port)",
       description:
         "Our service covers the transportation of goods from the doorstep of your business to the designated port of arrival, simplifying the complexities of global shipping and ensuring timely delivery.",
-      icon: ` bg-[url("/assets/img/expert.png")]`
+      icon: ` bg-[url("/assets/img/ship.png")]`
     },
     {
       title: "Domestic Freight Forwarding (Door to Door)",
       description:
         "We offer comprehensive freight forwarding solutions for domestic shipments, managing the entire transportation process from pickup at your location to delivery directly to the desired destination, providing convenience and peace of mind.",
-      icon: ` bg-[url("/assets/img/expert.png")]`
+      icon: ` bg-[url("/assets/img/cargo-truck.png")]`
     },
     {
       title: "Hauling / Trucking for Domestic and International",
       description:
         "Our hauling and trucking services cater to both domestic and international shipments, offering reliable transportation solutions to move your goods safely and efficiently, whether it's across town or across borders.",
-      icon: ` bg-[url("/assets/img/expert.png")]`
+      icon: ` bg-[url("/assets/img/trucks.png")]`
     }
   ];
 
-  const services = [
-    {
-      title: "Tariff and Customs Consultancy",
-      description:
-        "Our team provides clear advice on tariffs and customs regulations, helping you navigate import/export processes with ease.",
-      icon: ` bg-[url("/assets/img/consult.png")]`
-    },
-    {
-      title: "IMPORT/EXPORT Documentation",
-      description:
-        "We take care of all the paperwork, ensuring your shipments move smoothly from point A to point B.",
-      icon: ` bg-[url("/assets/img/ie-service.png")]`
-    },
-    {
-      title: "Transhipments",
-      description:
-        "Seamlessly transferring goods between different modes of transport to keep your supply chain flowing.",
-      icon: ` bg-[url("/assets/img/transhipment.png")]`
-    },
-    {
-      title: "Certificate of Payment Processing (For Motor Vehicle)",
-      description:
-        " Certificate of Payment Processing (For Motor Vehicle) Let us handle the paperwork needed to process payment certificates for your vehicles hassle-free.",
-      icon: ` bg-[url("/assets/img/payment.png")]`
-    },
-    {
-      title: "LTO Processing (For Motor Vehicle)",
-      description:
-        " We manage the paperwork for securing necessary approvals from the Land Transportation Office, making vehicle processing a breeze.",
-      icon: ` bg-[url("/assets/img/process.png")]`
-    },
-    {
-      title: "Importer's Accreditation Processing",
-      description:
-        "We assist in the accreditation process, making sure your import operations meet all regulatory requirements without any hassle.",
-      icon: ` bg-[url("/assets/img/iap-service.png")]`
-    }
-  ];
   return (
     <MainLayout>
       <div className="px-5 md:px-20 py-20">
@@ -127,7 +89,7 @@ function Service() {
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 ">
             <div className="flex flex-col gap-4 p-10  bg-white order-2 xl:order1 ">
               <div
-                className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+                className={` bg-[url("/assets/img/transhipment.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
               />
               <h1 className="text-[25px] font-extrabold">Transhipments</h1>
               <p className="text-[#88888a] text-xl ">
@@ -145,7 +107,7 @@ function Service() {
             <div className="flex flex-col gap-4 p-10  bg-white  ">
               <div className="flex items-center">
                 <div
-                  className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/export-import.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
                 />
               </div>
               <h1 className="text-[25px] font-extrabold">
@@ -161,7 +123,7 @@ function Service() {
             <div className="flex flex-col gap-4 p-10 bg-white  ">
               <div className="flex items-center">
                 <div
-                  className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/consultancy.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
                 />
               </div>
               <h1 className="text-[25px] font-extrabold">
@@ -178,7 +140,7 @@ function Service() {
             <div className="flex flex-col gap-4 p-10  bg-white  ">
               <div className="flex items-center">
                 <div
-                  className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/docs3.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
                 />
               </div>
               <h1 className="text-[25px] font-extrabold">
@@ -194,7 +156,7 @@ function Service() {
             <div className="flex flex-col gap-4 p-10  bg-white  ">
               <div className="flex items-center ">
                 <div
-                  className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/docs1.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
                 />
               </div>
               <h1 className="text-[25px] font-extrabold">
@@ -211,7 +173,7 @@ function Service() {
             <div className="flex flex-col gap-4 p-10  bg-white  ">
               <div className="flex items-center ">
                 <div
-                  className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
+                  className={` bg-[url("/assets/img/docs2.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
                 />
               </div>
               <h1 className="text-[25px] font-extrabold">

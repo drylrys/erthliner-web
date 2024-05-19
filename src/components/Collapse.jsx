@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
+import FormatNumber from "../lib/FormatNumber";
 
 function Collapse({ data = [], className }) {
   const [faqs, setFaqs] = useState(data);
 
   const handleToggle = (index) => {
     setFaqs((prevFaqs) => {
+      FormatNumber;
       return prevFaqs.map((faq, i) => {
         if (i === index) {
           return { ...faq, isOpen: !faq.isOpen }; // Toggle isOpen

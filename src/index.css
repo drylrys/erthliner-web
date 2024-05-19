@@ -10,3 +10,24 @@ body {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
+
+/* .animate-hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(100%);
+}
+
+.animate-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .animate-hidden,
+  .animate-show {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+} */

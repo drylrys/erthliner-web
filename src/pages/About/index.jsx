@@ -111,7 +111,7 @@ function About() {
               <div className="p-5 lg:p-14 bg-white flex flex-col gap-4">
                 <div className="flex items-center gap-4">
                   <div
-                    className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
+                    className={` bg-[url("/assets/img/vision.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
                   />
                   <h1 className="text-[40px]  font-extrabold mb-4">
                     OUR VISON
@@ -128,7 +128,7 @@ function About() {
               <div className="p-5 lg:p-14 bg-white flex flex-col gap-4 ">
                 <div className="flex items-center gap-4">
                   <div
-                    className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
+                    className={` bg-[url("/assets/img/mission.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
                   />
                   <h1 className="text-[40px]  font-extrabold mb-4">
                     OUR MISSION
@@ -147,7 +147,7 @@ function About() {
             <div className=" bg-white flex flex-col gap-4 p-5 lg:p-10  ">
               <div className="flex items-center gap-4">
                 <div
-                  className={` bg-[url("/assets/img/expert.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
+                  className={` bg-[url("/assets/img/core-value.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
                 />
                 <h1 className="text-[40px] font-extrabold mb-4">Core Values</h1>
               </div>

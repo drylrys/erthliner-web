@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Icon from "../Icon";
@@ -10,6 +10,22 @@ function MainLayout({ children }) {
   const handleToggleNav = () => {
     setNavToggle(!navToggle);
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-show");
+        } else {
+          entry.target.classList.remove("animate-show");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".animate-hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <>
       <div className="max-w-[1900px] mr-auto ml-auto bg-[#FAFAFA]">

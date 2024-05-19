@@ -1,32 +1,14 @@
-import React, { useRef, useState } from "react";
-import Navigation from "../../components/layout/Navigation";
-import Footer from "../../components/layout/Footer";
-import {
-  motion,
-  useAnimate,
-  useInView,
-  useScroll,
-  useTransform
-} from "framer-motion";
-import ChooseUsCard from "../../components/ChooseUsCard";
-import Collapse from "../../components/Collapse";
+import React from "react";
 import MainLayout from "../../components/layout/MainLayout";
 import Icon from "../../components/Icon";
 
 function Home() {
-  const whyChooseUsRef = useRef(null);
-  const isInView = useInView(whyChooseUsRef, { once: true });
-
-  const { scrollYProgress } = useScroll({
-    target: whyChooseUsRef,
-    offset: ["start end", "end start"]
-  });
-
   const contents = [
     {
       title: "Industry Expertise",
       textColor: "text-[#59886B]",
       borderColor: "border-[#59886B]",
+      icon: `bg-[url("/assets/img/expert.png")]`,
       transition: { type: "spring", duration: 1, delay: 0 },
       content:
         "With years of industry expertise, our team navigates the complexities of customs regulations with precision. We stay abreast of the latest changes, allowing us to offer informed solutions tailored to your business."
@@ -34,6 +16,7 @@ function Home() {
     {
       title: "Client-Centric Approach",
       textColor: "text-[#e4f801]",
+      icon: `bg-[url("/assets/img/client.png")]`,
       borderColor: "border-[#e4f801]",
       transition: { type: "spring", duration: 1, delay: 0.5 },
       content:
@@ -43,6 +26,7 @@ function Home() {
       title: "Cost Optimization",
       textColor: "text-[#e90100]",
       borderColor: "border-[#e90100]",
+      icon: `bg-[url("/assets/img/save-money.png")]`,
       transition: { type: "spring", duration: 1, delay: 1 },
       content:
         "We understand the financial implications of customs delays. Erthliner Cargo Express is committed to optimizing costs by minimizing delays and avoiding unnecessary fines through meticulous compliance management."
@@ -77,10 +61,10 @@ function Home() {
         </div>
 
         <div className="my-32">
-          <h1 className="text-[#BD3531] text-xl text-start  font-bold  md:pl-24">
+          <h1 className="animate-hidden text-[#BD3531] text-xl text-start  font-bold  md:pl-24">
             We are
           </h1>
-          <div className="flex justify-center flex-wrap md:flex-row gap-9 2xl:gap-52">
+          <div className="animate-hidden flex justify-center flexpublic-wrap md:flex-row gap-9 2xl:gap-52">
             <h1 className="font-extrabold  text-6xl">Why Choose Us</h1>
             <p className="text-[#88888a] text-2xl lg:text-end lg:w-1/2">
               At Erth liner cargo express co., We pride ourselves on being a
@@ -90,7 +74,7 @@ function Home() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-8 justify-center mt-20">
+          <div className="animate-hidden flex flex-wrap gap-8 justify-center mt-20 ">
             {contents.map((content, index) => {
               return (
                 <div
@@ -98,7 +82,7 @@ function Home() {
                   key={index}
                 >
                   <div
-                    className={` bg-[url("/assets/img/expert.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
+                    className={`${content.icon} h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
                   />
                   <h1 className="font-extrabold text-2xl">{content.title}</h1>
                   <p className="text-lg">{content.content}</p>
@@ -109,8 +93,10 @@ function Home() {
         </div>
 
         <div className="flex justify-center flex-col items-center ">
-          <h1 className="text-[#BD3531] text-xl font-bold">Our Services</h1>
-          <div className="text-center lg:w-8/12 flex flex-col gap-6">
+          <h1 className="animate-hidden text-[#BD3531] text-xl font-bold">
+            Our Services
+          </h1>
+          <div className=" animate-hidden text-center lg:w-8/12 flex flex-col gap-6">
             <h1 className="font-extrabold text-6xl">
               Clearing the path for your <br /> global trade
             </h1>
@@ -130,10 +116,10 @@ function Home() {
 
           <div className="grid lg:grid-cols-3 gap-2 my-12">
             <div className="flex flex-col gap-8">
-              <div className="p-5 lg:text-end flex flex-col gap-4 ">
+              <div className="animate-hidden p-5 lg:text-end flex flex-col gap-4 ">
                 <div className="flex lg:justify-end">
                   <div
-                    className={` bg-[url("/assets/img/expert.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
+                    className={` bg-[url("/assets/img/docs.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
                   />
                 </div>
                 <h1 className="font-bold text-4xl">
@@ -145,10 +131,10 @@ function Home() {
                   ensuring a smooth and efficient process for our clients
                 </p>
               </div>
-              <div className="p-5 lg:text-end flex flex-col gap-4 ">
+              <div className="animate-hidden p-5 lg:text-end flex flex-col gap-4  ">
                 <div className="flex lg:justify-end">
                   <div
-                    className={`bg-[url("/assets/img/expert.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
+                    className={`bg-[url("/assets/img/ship.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
                   />
                 </div>
                 <h1 className="font-bold text-4xl">
@@ -168,9 +154,9 @@ function Home() {
               />
             </div>
             <div className="flex flex-col  gap-8">
-              <div className="p-5  flex flex-col gap-4 ">
+              <div className="animate-hidden p-5  flex flex-col gap-4 ">
                 <div
-                  className={` bg-[url("/assets/img/expert.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
+                  className={` bg-[url("/assets/img/cargo-truck.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
                 />
 
                 <h1 className="font-bold text-4xl">
@@ -183,9 +169,9 @@ function Home() {
                   desired destination, providing convenience and peace of mind.
                 </p>
               </div>
-              <div className="p-5  flex flex-col gap-4 ">
+              <div className="animate-hidden p-5  flex flex-col gap-4 ">
                 <div
-                  className={` bg-[url("/assets/img/expert.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
+                  className={` bg-[url("/assets/img/trucks.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
                 />
 
                 <h1 className="font-bold text-4xl">
@@ -208,8 +194,8 @@ function Home() {
               className=" w-[400px] h-[400px]  md:h-[550px] md:w-[550px]"
             />
           </div>
-          <div className="flex flex-col justify-center lg:order-1  order-2  ">
-            <h1 className="text-[#BD3531] text-xl font-bold">About us</h1>
+          <div className="flex flex-col justify-center lg:order-1  order-2 animate-hidden   ">
+            <h1 className=" text-[#BD3531] text-xl font-bold">About us</h1>
             <div className="flex flex-col gap-12">
               <h1 className="text-[40px] font-extrabold">
                 Discover Erth liner Cargo Express Co., Your Trusted Partner in
