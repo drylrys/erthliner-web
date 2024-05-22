@@ -70,7 +70,7 @@ function ContactForm() {
 
   return (
     // <section className="flex-1 bg-[#F1F1F1] px-4 py-10 rounded-br-lg rounded-tr-lg">
-    <div className="flex flex-col items-center gap-5 bg-[#FFFFFF] lg:w-11/12 xl:w-8/12 py-14 rounded-3xl z-50 relative shadow-xl">
+    <div className="flex flex-col items-center gap-5 bg-[#FFFFFF] lg:w-11/12 xl:w-8/12 py-14  z-50 relative">
       <h1 className="text-[40px] font-semibold">Get a Free Quote</h1>
       <div className="flex flex-col gap-5 md:px-14 px-8 w-full">
         {/* <div className="flex flex-col md:flex-row gap-5"> */}
