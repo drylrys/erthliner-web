@@ -1,8 +1,11 @@
 import React from "react";
 import MainLayout from "../../components/layout/MainLayout";
 import Icon from "../../components/Icon";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   const contents = [
     {
       title: "Industry Expertise",
@@ -32,7 +35,9 @@ function Home() {
         "We understand the financial implications of customs delays. Erthliner Cargo Express is committed to optimizing costs by minimizing delays and avoiding unnecessary fines through meticulous compliance management."
     }
   ];
-
+  const handleNavigate = (link) => {
+    navigate(link);
+  };
   return (
     <MainLayout>
       <div className="px-2 md:px-20">
@@ -51,7 +56,10 @@ function Home() {
             experts will ensure a smooth and hassle-free process.
           </p>
           <div>
-            <button className="bg-[#BD3531] text-white px-10 py-4 rounded-md font-bold">
+            <button
+              onClick={() => handleNavigate("/contact")}
+              className="bg-[#BD3531] text-white px-10 py-4 rounded-md font-bold"
+            >
               Contact Us Now
             </button>
           </div>
@@ -105,7 +113,10 @@ function Home() {
               handle every aspect of your customs needs.
             </p>
           </div>
-          <button className="bg-[#BD3531] text-lg text-white px-10 py-4 rounded-md font-bold mt-7 flex items-center gap-3">
+          <button
+            onClick={() => handleNavigate("/services")}
+            className="bg-[#BD3531] text-lg text-white px-10 py-4 rounded-md font-bold mt-7 flex items-center gap-3"
+          >
             Explore Services
             <Icon
               src="/assets/svg/right-arrow.svg"
@@ -208,7 +219,10 @@ function Home() {
                 experts is committed to providing you with top-notch customs
                 brokerage services tailored to your unique business needs.
               </p>
-              <button className="bg-[#BD3531] text-lg  text-white font-bold w-64 p-4 rounded-lg flex items-center justify-center gap-3">
+              <button
+                onClick={() => handleNavigate("/about-us")}
+                className="bg-[#BD3531] text-lg  text-white font-bold w-64 p-4 rounded-lg flex items-center justify-center gap-3"
+              >
                 Know more about us
                 <Icon
                   src="/assets/svg/right-arrow.svg"
@@ -228,10 +242,16 @@ function Home() {
           UNLOCK TRADE EXCELLENCE – REACH OUT TO US TODAY!
         </div>
         <div className="flex flex-col md:flex-row gap-5">
-          <button className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg">
+          <button
+            onClick={() => handleNavigate("/faq")}
+            className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg"
+          >
             FAQ
           </button>
-          <button className="bg-white text-[#BD3531] font-bold w-64 p-4 rounded-lg">
+          <button
+            onClick={() => handleNavigate("/contact")}
+            className="bg-white text-[#BD3531] font-bold w-64 p-4 rounded-lg"
+          >
             Contact us
           </button>
         </div>

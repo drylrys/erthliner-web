@@ -20,7 +20,6 @@ function ContactForm() {
     message: ""
   });
   const handleSendEmail = async () => {
-    console.log(emailData);
     try {
       setLoadingButton(true);
       const response = await fetch(
@@ -32,7 +31,7 @@ function ContactForm() {
         }
       );
       const res = await response.json();
-      console.log(res);
+
       if (res.status === 400) {
         setLoadingButton(false);
 
@@ -179,7 +178,7 @@ function ContactForm() {
         {loadingButton ? (
           <svg
             aria-hidden="true"
-            class="w-6 h-6 text-gray-200 animate-spin dark:text-gray-600 fill-[#BD3531]"
+            className="w-6 h-6 text-gray-200 animate-spin dark:text-gray-600 fill-[#BD3531]"
             viewBox="0 0 100 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

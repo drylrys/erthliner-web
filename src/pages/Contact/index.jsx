@@ -1,40 +1,52 @@
 import React from "react";
 
 import MainLayout from "../../components/layout/MainLayout";
-import { MdEmail, MdLocalPhone } from "react-icons/md";
+import { MdEmail, MdLocalPhone, MdLocationPin } from "react-icons/md";
 import ContactForm from "../../components/ContactForm";
 function Contact() {
   return (
     <MainLayout>
-      {/* <section className="relative py-20">
+      <section className="relative py-20">
         <div className="flex flex-col items-center justify-center gap-10 lg:flex-row">
           <div className=" flex-1 w-full">
-            <div className="lg:w-11/12  px-5 md:px-20 lg:px-20">
-              <div className="text-center">
-                <h1 className="pb-10 text-[80px] font-bold text-center">
-                  Contact Us
+            <div className="lg:w-full px-5 md:px-20 lg:px-20">
+              <div className="flex flex-col justify-center items-center pb-20">
+                <h1 className="text-[#BD3531] text-xl  font-bold  ">
+                  Contact us
                 </h1>
+                <h1 className="text-4xl lg:text-5xl text-center font-extrabold mb-4">
+                  Let us hear from you!
+                </h1>
+                <p className="text-[20px] lg:text-center  text-[#88888a] ">
+                  Contact Erth Liner Cargo Express today and experience
+                  reliable, efficient, and personalized cargo services. Your
+                  logistics journey starts with a simple conversation!
+                </p>
               </div>
-              <h1 className="text-[20px] font-semibold">
-                Contact Erth Liner Cargo Express today and experience reliable,
-                efficient, and personalized cargo services. Your logistics
-                journey starts with a simple conversation!
-              </h1>
-
-              <div className="pt-20 flex flex-col gap-10">
-                <div className="flex items-center gap-5 ">
+              <div className="flex flex-col gap-10 justify-center">
+                <div className="flex flex-col lg:flex-row items-center gap-5 text-[#88888a]  font-semibold text-lg">
+                  <MdLocationPin
+                    className="bg-[#BD3531] text-white rounded-full p-2 "
+                    size={50}
+                  />
+                  <p className="lg:w-10/12">
+                    Room 611-B, Equitable Building 262 Juan Luna St. Binondo
+                    Manila 1006
+                  </p>
+                </div>
+                <div className="flex  flex-col lg:flex-row items-center gap-5  text-[#88888a] font-semibold text-lg">
                   <MdEmail
                     className="bg-[#BD3531] text-white rounded-full p-2"
                     size={50}
                   />
-                  earthliner@gmail.com
+                  customercare.erthliner@gmail.com
                 </div>
-                <div className="flex items-center  gap-5">
+                <div className="flex items-center  flex-col lg:flex-row text-[#88888a] gap-5 font-semibold text-lg">
                   <MdLocalPhone
                     className="bg-[#BD3531] text-white rounded-full p-2"
                     size={50}
                   />
-                  +63 9876543210
+                  (+632) 8244-24-37; 8986-89-23
                 </div>
               </div>
             </div>
@@ -52,7 +64,7 @@ function Contact() {
         }}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-      ></iframe> */}
+      ></iframe>
     </MainLayout>
   );
 }

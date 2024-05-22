@@ -2,7 +2,12 @@ import React from "react";
 
 import MainLayout from "../../components/layout/MainLayout";
 import Icon from "../../components/Icon";
+import { useNavigate } from "react-router-dom";
 function Employee() {
+  const navigate = useNavigate();
+  const handleNavigate = (link) => {
+    navigate(link);
+  };
   const employees = [
     {
       name: "Daryl Reyes",
@@ -94,10 +99,16 @@ function Employee() {
           vision a reality
         </div>
         <div className="flex flex-col md:flex-row gap-5">
-          <button className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg">
+          <button
+            onClick={() => handleNavigate("/faq")}
+            className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg"
+          >
             FAQ
           </button>
-          <button className="bg-white text-[#BD3531] font-bold w-64 p-4 rounded-lg">
+          <button
+            onClick={() => handleNavigate("/contact")}
+            className="bg-white text-[#BD3531] font-bold w-64 p-4 rounded-lg"
+          >
             Contact us
           </button>
         </div>

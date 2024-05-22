@@ -2,8 +2,13 @@ import React from "react";
 import Footer from "../../components/layout/Footer";
 import Navigation from "../../components/layout/Navigation";
 import MainLayout from "../../components/layout/MainLayout";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const navigate = useNavigate();
+  const handleNavigate = (link) => {
+    navigate(link);
+  };
   return (
     <MainLayout>
       <div className="px-5 md:px-20 py-20">
@@ -191,10 +196,16 @@ function About() {
           UNLOCK TRADE EXCELLENCE – REACH OUT TO US TODAY!
         </div>
         <div className="flex flex-col md:flex-row gap-5">
-          <button className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg">
+          <button
+            onClick={() => handleNavigate("/faq")}
+            className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg"
+          >
             FAQ
           </button>
-          <button className="bg-white text-[#BD3531] font-bold w-64 p-4 rounded-lg">
+          <button
+            onClick={() => handleNavigate("/contact")}
+            className="bg-white text-[#BD3531] font-bold w-64 p-4 rounded-lg"
+          >
             Contact us
           </button>
         </div>

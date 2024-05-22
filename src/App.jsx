@@ -6,10 +6,12 @@ import Advocacy from "./pages/Advocacy";
 import Employee from "./pages/Employee";
 import Faq from "./pages/Faq";
 import Service from "./pages/Service";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
