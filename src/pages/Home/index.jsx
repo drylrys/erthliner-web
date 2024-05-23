@@ -161,7 +161,7 @@ function Home() {
             </div>
             <div className="lg:flex lg:justify-center hidden">
               <div
-                className={`bg-[url("/assets/img/ship3.png")] w-full h-full bg-cover bg-no-repeat bg-top`}
+                className={`bg-[url("/assets/img/ship4.jpeg")] w-full h-full bg-cover bg-no-repeat bg-top`}
               />
             </div>
             <div className="flex flex-col  gap-8">
@@ -201,7 +201,7 @@ function Home() {
         <div className="grid lg:grid-cols-2 gap-16 md:gap-20 my-32  ">
           <div className="flex justify-center">
             <img
-              src="/assets/img/bg1.jpg"
+              src="/assets/img/ship5.jpg"
               className=" w-[400px] h-[400px]  md:h-[550px] md:w-[550px]"
             />
           </div>
