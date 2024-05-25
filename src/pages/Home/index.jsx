@@ -2,6 +2,7 @@ import React from "react";
 import MainLayout from "../../components/layout/MainLayout";
 import Icon from "../../components/Icon";
 import { useNavigate } from "react-router-dom";
+import { Reveal } from "../../components/Reveal";
 
 function Home() {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ function Home() {
   return (
     <MainLayout>
       <div className="px-2 md:px-20">
-        <div className="flex flex-col justify-center items-center gap-10 mt-20">
+        <Reveal className="flex flex-col justify-center items-center gap-10 mt-20">
           <h1 className="font-extrabold text-6xl md:text-7xl text-center">
             Simplify Your{" "}
             <span className="text-[#BD3531]">
@@ -66,13 +67,13 @@ function Home() {
           <div
             className={`bg-[url("/assets/img/bg.jpg")] w-full h-[700px] bg-cover bg-no-repeat bg-bottom`}
           />
-        </div>
+        </Reveal>
 
-        <div className="my-32">
+        <Reveal className="my-32 ">
           <h1 className="animate-hidden text-[#BD3531] text-xl text-start  font-bold  md:pl-24">
             We are
           </h1>
-          <div className="animate-hidden flex justify-center flexpublic-wrap md:flex-row gap-9 2xl:gap-52">
+          <div className="animate-hidden flex flex-col justify-center flexpublic-wrap md:flex-row gap-9 2xl:gap-52">
             <h1 className="font-extrabold  text-6xl">Why Choose Us</h1>
             <p className="text-[#88888a] text-2xl lg:text-end lg:w-1/2">
               At Erth liner cargo express co., We pride ourselves on being a
@@ -98,13 +99,13 @@ function Home() {
               );
             })}
           </div>
-        </div>
+        </Reveal>
 
         <div className="flex justify-center flex-col items-center ">
           <h1 className="animate-hidden text-[#BD3531] text-xl font-bold">
             Our Services
           </h1>
-          <div className=" animate-hidden text-center lg:w-8/12 flex flex-col gap-6">
+          <Reveal className=" animate-hidden text-center lg:w-8/12 flex flex-col gap-6">
             <h1 className="font-extrabold text-6xl">
               Clearing the path for your <br /> global trade
             </h1>
@@ -112,7 +113,8 @@ function Home() {
               From seamless clearances to expert duty optimization, trust us to
               handle every aspect of your customs needs.
             </p>
-          </div>
+          </Reveal>
+
           <button
             onClick={() => handleNavigate("/services")}
             className="bg-[#BD3531] text-lg text-white px-10 py-4 rounded-md font-bold mt-7 flex items-center gap-3"
@@ -127,7 +129,7 @@ function Home() {
 
           <div className="grid lg:grid-cols-3 gap-2 my-12">
             <div className="flex flex-col gap-8">
-              <div className="animate-hidden p-5 lg:text-end flex flex-col gap-4 ">
+              <Reveal className="animate-hidden p-5 lg:text-end flex flex-col gap-4 ">
                 <div className="flex lg:justify-end">
                   <div
                     className={` bg-[url("/assets/img/docs.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
@@ -141,8 +143,8 @@ function Home() {
                   in customs clearance for importing and exporting goods,
                   ensuring a smooth and efficient process for our clients
                 </p>
-              </div>
-              <div className="animate-hidden p-5 lg:text-end flex flex-col gap-4  ">
+              </Reveal>
+              <Reveal className="animate-hidden p-5 lg:text-end flex flex-col gap-4  ">
                 <div className="flex lg:justify-end">
                   <div
                     className={`bg-[url("/assets/img/ship.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
@@ -157,15 +159,15 @@ function Home() {
                   simplifying the complexities of global shipping and ensuring
                   timely delivery.
                 </p>
-              </div>
+              </Reveal>
             </div>
-            <div className="lg:flex lg:justify-center hidden">
+            <Reveal className="lg:flex lg:justify-center hidden">
               <div
                 className={`bg-[url("/assets/img/ship4.jpeg")] w-full h-full bg-cover bg-no-repeat bg-top`}
               />
-            </div>
+            </Reveal>
             <div className="flex flex-col  gap-8">
-              <div className="animate-hidden p-5  flex flex-col gap-4 ">
+              <Reveal className="animate-hidden p-5  flex flex-col gap-4 ">
                 <div
                   className={` bg-[url("/assets/img/cargo-truck.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
                 />
@@ -179,8 +181,8 @@ function Home() {
                   from pickup at your location to delivery directly to the
                   desired destination, providing convenience and peace of mind.
                 </p>
-              </div>
-              <div className="animate-hidden p-5  flex flex-col gap-4 ">
+              </Reveal>
+              <Reveal className="animate-hidden p-5  flex flex-col gap-4 ">
                 <div
                   className={` bg-[url("/assets/img/trucks.png")] h-[80px] w-[80px] bg-cover bg-no-repeat bg-center`}
                 />
@@ -194,18 +196,18 @@ function Home() {
                   solutions to move your goods safely and efficiently, whether
                   it's across town or across borders.
                 </p>
-              </div>
+              </Reveal>
             </div>
           </div>
         </div>
         <div className="grid lg:grid-cols-2 gap-16 md:gap-20 my-32  ">
-          <div className="flex justify-center">
+          <Reveal className="flex justify-center">
             <img
               src="/assets/img/ship5.jpg"
               className=" w-[400px] h-[400px]  md:h-[550px] md:w-[550px]"
             />
-          </div>
-          <div className="flex flex-col justify-center lg:order-1  order-2 animate-hidden   ">
+          </Reveal>
+          <Reveal className="flex flex-col justify-center lg:order-1  order-2 animate-hidden   ">
             <h1 className=" text-[#BD3531] text-xl font-bold">About us</h1>
             <div className="flex flex-col gap-12">
               <h1 className="text-[40px] font-extrabold">
@@ -231,17 +233,17 @@ function Home() {
                 />
               </button>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
 
       <div
         className={`bg-[url("/assets/img/redbg.jpg")] bg-cover bg-no-repeat bg-top gap-10 flex flex-col w-full justify-center items-center p-2 md:h-[500px]`}
       >
-        <div className="text-white font-extrabold text-5xl md:text-6xl md:w-1/2">
+        <Reveal className="text-white font-extrabold text-5xl md:text-6xl md:w-1/2">
           UNLOCK TRADE EXCELLENCE – REACH OUT TO US TODAY!
-        </div>
-        <div className="flex flex-col md:flex-row gap-5">
+        </Reveal>
+        <Reveal className="flex flex-col md:flex-row gap-5">
           <button
             onClick={() => handleNavigate("/faq")}
             className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg"
@@ -254,7 +256,7 @@ function Home() {
           >
             Contact us
           </button>
-        </div>
+        </Reveal>
       </div>
     </MainLayout>
   );

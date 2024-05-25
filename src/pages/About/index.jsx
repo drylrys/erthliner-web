@@ -4,6 +4,7 @@ import Navigation from "../../components/layout/Navigation";
 import MainLayout from "../../components/layout/MainLayout";
 import { useNavigate } from "react-router-dom";
 import Icon from "../../components/Icon";
+import { Reveal } from "../../components/Reveal";
 
 function About() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ function About() {
   return (
     <MainLayout>
       <div className="px-5 md:px-20 py-20">
-        <div className="flex flex-col justify-center items-center">
+        <Reveal className="flex flex-col justify-center items-center">
           <h1 className="text-[#BD3531] text-xl  font-bold  ">About Us</h1>
           <h1 className="text-5xl text-center lg:text-start font-extrabold mb-4">
             Erth Liner Cargo Express Co.
@@ -27,14 +28,14 @@ function About() {
             assured that your company will not experience delays and penalties,
             thus saving your valuable time and precious resources.
           </p>
-        </div>
+        </Reveal>
 
         <div className="py-20 flex flex-col items-center gap-8">
           <div className="bg-white p-4 flex flex-col xl:flex-row gap-4 items-center justify-center ">
-            <div
+            <Reveal
               className={` bg-[url("/assets/img/ship2.jpg")] h-[300px] w-[300px] md:h-[600px] md:w-[600px] bg-cover bg-no-repeat bg-center `}
             />
-            <div className="lg:flex-1 flex items-center flex-col text-2xl ">
+            <Reveal className="lg:flex-1 flex items-center flex-col text-2xl ">
               <div className="flex flex-col justify-center items-center lg:px-20 lg:text-center">
                 <h1 className="text-[#BD3531] text-xl  font-bold  ">
                   Company History
@@ -58,46 +59,46 @@ function About() {
                 businessmen and stockholders who pooled their talents, expertise
                 and resources to create the most reliable service provider.
               </p>
-            </div>
+            </Reveal>
           </div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap  gap-4 py-20">
-          <div className="flex flex-col justify-center items-center flex-1">
+          <Reveal className="flex flex-col justify-center items-center flex-1">
             <h1 className="text-[#BD3531] text-xl  font-bold  ">What we do</h1>
             <h1 className="text-5xl text-center font-extrabold mb-4">
               We at ERTH Liner Cargo <br /> Express Co.
             </h1>
-          </div>
+          </Reveal>
           <div className="flex flex-col gap-14  flex-1">
             <div className="p-12 text-[20px] bg-white flex flex-col items-center   border-[#BD3531] border-l-8 text-[#88888a] flex-1 gap-5">
-              <p>
+              <Reveal>
                 We facilitate worry-free transactions to our clients, and
                 provide easy access to importers and exporters in and out of the
                 country.
-              </p>
+              </Reveal>
             </div>
             <div className="p-12 text-[20px] bg-white flex flex-col items-center border-[#BD3531] border-l-8  text-[#88888a] flex-1 gap-5">
-              <p>
+              <Reveal>
                 We offers cost-effective and efficient solutions from tariff
                 computations based on the most economical and efficient
                 commodity classification with timely deliveries and conveyance
                 of goods to their respective destinations.
-              </p>
+              </Reveal>
             </div>
             <div className="p-12 text-[20px] bg-white flex flex-col items-center  border-[#BD3531] border-l-8 text-[#88888a] flex-1 gap-5">
-              <p>
+              <Reveal>
                 Our first class services provide uninterrupted access to our
                 most progressive clientele world-wide, as well as ensure
                 security and personalized handling of goods for the satisfaction
                 of our valued stakeholders.
-              </p>
+              </Reveal>
             </div>
           </div>
         </div>
 
         <div className="my-20">
-          <div className="flex flex-col justify-center items-center lg:px-20 lg:text-center gap-4 mb-7">
+          <Reveal className="flex flex-col justify-center items-center lg:px-20 lg:text-center gap-4 mb-7">
             <h1 className="text-[#BD3531] text-xl  font-bold  ">
               Strategy and Vision
             </h1>
@@ -111,11 +112,11 @@ function About() {
               top-quality results and ensuring that everyone involved feels
               satisfied with the outcome of our efforts.
             </p>
-          </div>
+          </Reveal>
           <div className="flex flex-col lg:flex-row gap gap-4 ">
             <div className="flex flex-col gap-4 ">
               <div className="p-5 lg:p-14 bg-white flex flex-col gap-4">
-                <div className="flex items-center gap-4">
+                <Reveal className="flex items-center gap-4">
                   <Icon
                     src="/assets/img/vision.png"
                     alt="vision"
@@ -124,17 +125,17 @@ function About() {
                   <h1 className="text-[40px]  font-extrabold mb-4">
                     OUR VISON
                   </h1>
-                </div>
+                </Reveal>
 
-                <p className="text-[#88888a] text-[20px]">
+                <Reveal className="text-[#88888a] text-[20px]">
                   ERTH LINER CARGO EXPRESS CO., is a highly professional,
                   dependable and client-friendly customs brokerage services
                   provider that renders the fastest, most competitive and most
                   innovative services in the country and the world.
-                </p>
+                </Reveal>
               </div>
               <div className="p-5 lg:p-14 bg-white flex flex-col gap-4 ">
-                <div className="flex items-center gap-4">
+                <Reveal className="flex items-center gap-4">
                   <Icon
                     src="/assets/img/mission.png"
                     alt="mission"
@@ -143,19 +144,19 @@ function About() {
                   <h1 className="text-[40px]  font-extrabold mb-4">
                     OUR MISSION
                   </h1>
-                </div>
+                </Reveal>
 
-                <p className="text-[#88888a] text-[20px]">
+                <Reveal className="text-[#88888a] text-[20px]">
                   To provide the general clientele with professional, reliable,
                   efficient and A-1 brokerage and freight forwarding services
                   that will facilitate fast release of import and dispatch of
                   export items with high quality service at par with our
                   international principals.
-                </p>
+                </Reveal>
               </div>
             </div>
             <div className=" bg-white flex flex-col gap-4 p-5 lg:p-10  ">
-              <div className="flex items-center gap-4">
+              <Reveal className="flex items-center gap-4">
                 <Icon
                   src="/assets/img/core-value.png"
                   alt="core-value"
@@ -163,10 +164,10 @@ function About() {
                 />
 
                 <h1 className="text-[40px] font-extrabold mb-4">Core Values</h1>
-              </div>
+              </Reveal>
 
               <div className="flex flex-col gap-4">
-                <div>
+                <Reveal>
                   <h1 className="font-extrabold text-[25px]">
                     PROFESSIONALISM
                   </h1>
@@ -175,23 +176,23 @@ function About() {
                     dealing with its stakeholders with an end-in view of
                     establishing long-term partnerships.
                   </p>
-                </div>
-                <div>
+                </Reveal>
+                <Reveal>
                   <h1 className="font-extrabold text-[25px]">INTEGRITY</h1>
                   <p className="text-[#88888a] text-[20px]">
                     Honesty, reliability and honor... rolled into one - the
                     highest ethical and moral standards that shall crown the
                     over-all corporate well-being of ELEX.
                   </p>
-                </div>
-                <div>
+                </Reveal>
+                <Reveal>
                   <h1 className="font-extrabold text-[25px]">EXCELLENCE</h1>
                   <p className="text-[#88888a] text-[20px]">
                     ELEX is committed to offer superior performance in all
                     aspects of ELEX operations redounding to the clientele's and
                     stakeholders' over-all satisfaction.
                   </p>
-                </div>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -200,10 +201,10 @@ function About() {
       <div
         className={`bg-[url("/assets/img/redbg.jpg")] bg-cover bg-no-repeat bg-top gap-10 flex flex-col w-full justify-center items-center p-2 md:h-[500px]`}
       >
-        <div className="text-white font-extrabold text-5xl md:text-6xl md:w-1/2">
+        <Reveal className="text-white font-extrabold text-5xl md:text-6xl md:w-1/2">
           UNLOCK TRADE EXCELLENCE – REACH OUT TO US TODAY!
-        </div>
-        <div className="flex flex-col md:flex-row gap-5">
+        </Reveal>
+        <Reveal className="flex flex-col md:flex-row gap-5">
           <button
             onClick={() => handleNavigate("/faq")}
             className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg"
@@ -216,7 +217,7 @@ function About() {
           >
             Contact us
           </button>
-        </div>
+        </Reveal>
       </div>
     </MainLayout>
   );

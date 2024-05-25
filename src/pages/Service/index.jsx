@@ -3,6 +3,7 @@ import Footer from "../../components/layout/Footer";
 import Navigation from "../../components/layout/Navigation";
 import MainLayout from "../../components/layout/MainLayout";
 import { useNavigate } from "react-router-dom";
+import { Reveal } from "../../components/Reveal";
 function Service() {
   const navigate = useNavigate();
   const handleNavigate = (link) => {
@@ -38,7 +39,7 @@ function Service() {
   return (
     <MainLayout>
       <div className="px-5 md:px-20 py-20">
-        <div className="flex flex-col justify-center items-center ">
+        <Reveal className="flex flex-col justify-center items-center ">
           <h1 className="text-[#BD3531] text-xl  font-bold  ">
             PRODUCT & SERVICES
           </h1>
@@ -54,17 +55,19 @@ function Service() {
             delivery of your goods, our commitment to excellence shines through
             at every step of the journey.de
           </p>
-        </div>
+        </Reveal>
 
         <div className="flex flex-col items-center py-20 gap-8">
-          <h1 className="text-[#BD3531] text-4xl font-bold">OUR PRODUCTS</h1>
+          <Reveal className="text-[#BD3531] text-4xl font-bold">
+            OUR PRODUCTS
+          </Reveal>
           <div className="flex flex-col xl:flex-row gap-4">
-            <div className="flex justify-center ">
+            <Reveal className="flex justify-center ">
               <div
                 className={` bg-[url("/assets/img/port2.jpg")] w-full h-[350px] xl:w-[700px] xl:h-full  bg-cover bg-no-repeat bg-center `}
               />
-            </div>
-            <div className="justify-center grid md:grid-cols-2  gap-6">
+            </Reveal>
+            <Reveal className="justify-center grid md:grid-cols-2  gap-6">
               {products.map((product, index) => {
                 return (
                   <div
@@ -85,14 +88,16 @@ function Service() {
                   </div>
                 );
               })}
-            </div>
+            </Reveal>
           </div>
         </div>
 
         <div className="flex flex-col justify-center items-center gap-8 py-20">
-          <h1 className="text-[#BD3531] text-4xl font-bold">OUR SERVICES</h1>
+          <Reveal className="text-[#BD3531] text-4xl font-bold">
+            OUR SERVICES
+          </Reveal>
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 ">
-            <div className="flex flex-col gap-4 p-10  bg-white order-2 xl:order1 ">
+            <Reveal className="flex flex-col gap-4 p-10  bg-white order-2 xl:order1 ">
               <div
                 className={` bg-[url("/assets/img/transhipment.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
               />
@@ -101,15 +106,15 @@ function Service() {
                 Seamlessly transferring goods between different modes of
                 transport to keep your supply chain flowing.
               </p>
-            </div>
+            </Reveal>
 
-            <div className="xl:col-span-3 xl:row-span-2 md:col-span-2 ">
+            <Reveal className="xl:col-span-3 xl:row-span-2 md:col-span-2 ">
               <div
                 className={` bg-[url("/assets/img/containercargo.jpg")] h-[400px]  xl:h-full w-full bg-cover bg-no-repeat bg-center `}
               />
-            </div>
+            </Reveal>
 
-            <div className="flex flex-col gap-4 p-10  bg-white  ">
+            <Reveal className="flex flex-col gap-4 p-10  bg-white  ">
               <div className="flex items-center">
                 <div
                   className={` bg-[url("/assets/img/export-import.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
@@ -123,9 +128,9 @@ function Service() {
                 We take care of all the paperwork, ensuring your shipments move
                 smoothly from point A to point B.
               </p>
-            </div>
+            </Reveal>
 
-            <div className="flex flex-col gap-4 p-10 bg-white  ">
+            <Reveal className="flex flex-col gap-4 p-10 bg-white  ">
               <div className="flex items-center">
                 <div
                   className={` bg-[url("/assets/img/consultancy.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
@@ -140,9 +145,9 @@ function Service() {
                 regulations, helping you navigate import/export processes with
                 ease.
               </p>
-            </div>
+            </Reveal>
 
-            <div className="flex flex-col gap-4 p-10  bg-white  ">
+            <Reveal className="flex flex-col gap-4 p-10  bg-white  ">
               <div className="flex items-center">
                 <div
                   className={` bg-[url("/assets/img/docs3.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
@@ -156,9 +161,9 @@ function Service() {
                 Let us handle the paperwork needed to process payment
                 certificates for your vehicles hassle-free.
               </p>
-            </div>
+            </Reveal>
 
-            <div className="flex flex-col gap-4 p-10  bg-white  ">
+            <Reveal className="flex flex-col gap-4 p-10  bg-white  ">
               <div className="flex items-center ">
                 <div
                   className={` bg-[url("/assets/img/docs1.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
@@ -173,9 +178,9 @@ function Service() {
                 the Land Transportation Office, making vehicle processing a
                 breeze.
               </p>
-            </div>
+            </Reveal>
 
-            <div className="flex flex-col gap-4 p-10  bg-white  ">
+            <Reveal className="flex flex-col gap-4 p-10  bg-white  ">
               <div className="flex items-center ">
                 <div
                   className={` bg-[url("/assets/img/docs2.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center `}
@@ -189,17 +194,17 @@ function Service() {
                 We assist in the accreditation process, making sure your import
                 operations meet all regulatory requirements without any hassle.
               </p>
-            </div>
+            </Reveal>
           </div>
         </div>
       </div>
       <div
         className={`bg-[url("/assets/img/redbg.jpg")] bg-cover bg-no-repeat bg-top gap-10 flex flex-col w-full justify-center items-center p-2 md:h-[500px]`}
       >
-        <div className="text-white font-extrabold text-5xl md:text-6xl md:w-1/2">
+        <Reveal className="text-white font-extrabold text-5xl md:text-6xl md:w-1/2">
           UNLOCK TRADE EXCELLENCE – REACH OUT TO US TODAY!
-        </div>
-        <div className="flex flex-col md:flex-row gap-5">
+        </Reveal>
+        <Reveal className="flex flex-col md:flex-row gap-5">
           <button
             onClick={() => handleNavigate("/faq")}
             className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg"
@@ -212,7 +217,7 @@ function Service() {
           >
             Contact us
           </button>
-        </div>
+        </Reveal>
       </div>
     </MainLayout>
   );

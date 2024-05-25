@@ -4,6 +4,7 @@ import Navigation from "../../components/layout/Navigation";
 import MainLayout from "../../components/layout/MainLayout";
 import Collapse from "../../components/Collapse";
 import { useNavigate } from "react-router-dom";
+import { Reveal } from "../../components/Reveal";
 function Faq() {
   const navigate = useNavigate();
   const handleNavigate = (link) => {
@@ -38,7 +39,7 @@ function Faq() {
   ];
   return (
     <MainLayout>
-      <div className="px-5 md:px-20 py-20">
+      <Reveal className="px-5 md:px-20 py-20">
         <div className="flex flex-col justify-center items-center pb-20">
           <h1 className="text-[#BD3531] text-xl  font-bold  ">Common</h1>
           <h1 className="text-4xl lg:text-5xl text-center font-extrabold mb-4">
@@ -51,11 +52,11 @@ function Faq() {
         </div>
 
         <Collapse data={data} />
-      </div>
+      </Reveal>
       <div
         className={`bg-[url("/assets/img/redbg.jpg")] bg-cover bg-no-repeat bg-top gap-10 flex flex-col w-full justify-center items-center p-2 md:h-[500px]`}
       >
-        <div className="flex flex-col gap-4">
+        <Reveal className="flex flex-col gap-4">
           <h1 className="text-white font-extrabold text-5xl lg:text-6xl text-center ">
             Need more information ? Contact us
           </h1>
@@ -63,8 +64,8 @@ function Faq() {
             If you have any questions or need assistance, please feel free to
             reach out to our team.
           </p>
-        </div>
-        <div className="flex flex-col md:flex-row gap-5">
+        </Reveal>
+        <Reveal className="flex flex-col md:flex-row gap-5">
           <button
             onClick={() => handleNavigate("/faq")}
             className="bg-[#BD3531] text-white font-bold w-64 p-4 rounded-lg"
@@ -77,7 +78,7 @@ function Faq() {
           >
             Contact us
           </button>
-        </div>
+        </Reveal>
       </div>
     </MainLayout>
   );
