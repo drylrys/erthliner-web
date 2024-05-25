@@ -3,6 +3,7 @@ import Footer from "../../components/layout/Footer";
 import Navigation from "../../components/layout/Navigation";
 import MainLayout from "../../components/layout/MainLayout";
 import { useNavigate } from "react-router-dom";
+import Icon from "../../components/Icon";
 
 function About() {
   const navigate = useNavigate();
@@ -115,8 +116,10 @@ function About() {
             <div className="flex flex-col gap-4 ">
               <div className="p-5 lg:p-14 bg-white flex flex-col gap-4">
                 <div className="flex items-center gap-4">
-                  <div
-                    className={` bg-[url("/assets/img/vision.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
+                  <Icon
+                    src="/assets/img/vision.png"
+                    alt="vision"
+                    className="h-[60px] w-[60px]"
                   />
                   <h1 className="text-[40px]  font-extrabold mb-4">
                     OUR VISON
@@ -132,8 +135,10 @@ function About() {
               </div>
               <div className="p-5 lg:p-14 bg-white flex flex-col gap-4 ">
                 <div className="flex items-center gap-4">
-                  <div
-                    className={` bg-[url("/assets/img/mission.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
+                  <Icon
+                    src="/assets/img/mission.png"
+                    alt="mission"
+                    className="h-[60px] w-[60px]"
                   />
                   <h1 className="text-[40px]  font-extrabold mb-4">
                     OUR MISSION
@@ -151,9 +156,12 @@ function About() {
             </div>
             <div className=" bg-white flex flex-col gap-4 p-5 lg:p-10  ">
               <div className="flex items-center gap-4">
-                <div
-                  className={` bg-[url("/assets/img/core-value.png")] h-[60px] w-[60px] bg-cover bg-no-repeat bg-center`}
+                <Icon
+                  src="/assets/img/core-value.png"
+                  alt="core-value"
+                  className="h-[60px] w-[60px]"
                 />
+
                 <h1 className="text-[40px] font-extrabold mb-4">Core Values</h1>
               </div>
 
